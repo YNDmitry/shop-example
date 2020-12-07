@@ -446,8 +446,12 @@
     scrollTop = $(window).scrollTop()
     if (scrollTop >= 250) {
     $('.navbar').addClass('show')
+    $('.soc-items').addClass('hidden')
+    $('.brand.nav').removeClass('telephone')
     } else if (scrollTop < 150) {
     $('.navbar').removeClass('show')
+    $('.soc-items').removeClass('hidden')
+    $('.brand.nav').addClass('telephone')
     }
     })
     });
