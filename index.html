@@ -7,6 +7,7 @@
   <link href="assets/site/css/normalize.css" rel="stylesheet" type="text/css">
   <link href="assets/site/css/components.css" rel="stylesheet" type="text/css">
   <link href="assets/site/css/shop-wq.css" rel="stylesheet" type="text/css">
+  <link href="assets/site/css/icons.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="assets/site/images/favicon.png" rel="shortcut icon" type="image/x-icon">
@@ -16,19 +17,22 @@
 <body>
   <div class="info-block-top">
     <div class="links-wrapper">
-      <a href="#" class="link-top">Find a store</a>
-      <a href="#" class="link-top mail">Newsletter</a>
-      <form action="/search" class="search-wrapper w-form"><input type="search" class="search-input w-input" maxlength="256" name="query" placeholder="" id="search" required=""><input type="submit" value="" class="search-btn w-button"></form>
+      <a href="#" class="link-top"><span class="font-icon icon-location-pin"> </span>Find a store</a>
+      <a href="#" class="link-top mail"><span class="font-icon icon-envelope"> </span>Newsletter</a>
+      <form action="/search" class="search-wrapper w-form"><input type="search" class="search-input w-input" maxlength="256" name="query" placeholder="" id="search" required="">
+        <div class="search-wrapper-btn"><input type="submit" value="" id="search-btn" class="search-btn lnr-chevron-right w-button"></div>
+      </form>
     </div>
     <div class="links-wrapper">
-      <a href="#" class="link-top telephone">+33 (0) 559 6631</a>
-      <a href="#" class="link-top profil">My account</a>
+      <a href="#" class="link-top telephone"><span class="font-icon icon-phone"> </span>+33 (0) 559 6631</a>
+      <a href="#" class="link-top profil"><span class="font-icon icon-user"> </span>My account</a>
     </div>
   </div>
   <header class="header">
-    <a href="#" class="brand w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt=""></a>
+    <a href="#" class="brand w-inline-block"><img src="images/makao-logo-new.png" loading="lazy" alt=""></a>
     <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
       <div class="container">
+        <a href="#" class="brand nav telephone w-inline-block"><img src="images/makao-logo-new.png" loading="lazy" alt="" class="brand-menu"></a>
         <div class="soc-items">
           <a href="#" class="nav-link soc w-nav-link">fb</a>
           <a href="#" class="nav-link soc w-nav-link">tw</a>
@@ -37,29 +41,82 @@
         <nav role="navigation" class="nav-menu w-nav-menu">
           <ul role="list" class="list">
             <li>
-              <a href="#" class="nav-link w-nav-link">Home</a>
+              <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                <div class="dd-toggle w-dropdown-toggle">
+                  <a href="#" class="nav-link w-nav-link">Home</a>
+                </div>
+                <nav class="w-dropdown-list">
+                  <a href="#" class="w-dropdown-link">Link 1</a>
+                  <a href="#" class="w-dropdown-link">Link 2</a>
+                  <a href="#" class="w-dropdown-link">Link 3</a>
+                </nav>
+              </div>
             </li>
             <li>
-              <a href="#" class="nav-link w-nav-link">PAGES</a>
+              <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                <div class="dd-toggle w-dropdown-toggle">
+                  <a href="#" class="nav-link w-nav-link">PAGES</a>
+                </div>
+                <nav class="w-dropdown-list">
+                  <a href="#" class="w-dropdown-link">Link 1</a>
+                  <a href="#" class="w-dropdown-link">Link 2</a>
+                  <a href="#" class="w-dropdown-link">Link 3</a>
+                </nav>
+              </div>
             </li>
             <li>
-              <a href="#" class="nav-link w-nav-link">SHOP</a>
+              <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                <div class="dd-toggle w-dropdown-toggle">
+                  <a href="#" class="nav-link w-nav-link">SHOP</a>
+                </div>
+                <nav class="w-dropdown-list">
+                  <a href="#" class="w-dropdown-link">Link 1</a>
+                  <a href="#" class="w-dropdown-link">Link 2</a>
+                  <a href="#" class="w-dropdown-link">Link 3</a>
+                </nav>
+              </div>
             </li>
             <li>
-              <a href="#" class="nav-link w-nav-link">Lookbook</a>
+              <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                <div class="dd-toggle w-dropdown-toggle">
+                  <a href="#" class="nav-link w-nav-link">Lookbook</a>
+                </div>
+                <nav class="w-dropdown-list">
+                  <a href="#" class="w-dropdown-link">Link 1</a>
+                  <a href="#" class="w-dropdown-link">Link 2</a>
+                  <a href="#" class="w-dropdown-link">Link 3</a>
+                </nav>
+              </div>
             </li>
             <li>
-              <a href="#" class="nav-link w-nav-link">Blog</a>
+              <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                <div class="dd-toggle w-dropdown-toggle">
+                  <a href="#" class="nav-link w-nav-link">Blog</a>
+                </div>
+                <nav class="w-dropdown-list">
+                  <a href="#" class="w-dropdown-link">Link 1</a>
+                  <a href="#" class="w-dropdown-link">Link 2</a>
+                  <a href="#" class="w-dropdown-link">Link 3</a>
+                </nav>
+              </div>
             </li>
           </ul>
         </nav>
         <div class="menu-button w-nav-button">
           <div class="w-icon-nav-menu"></div>
         </div>
-        <a href="#" class="brand telephone w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt=""></a>
         <div class="products-items">
-          <a href="#" class="nav-link cart w-nav-link">cart (0)</a>
-          <a href="#" class="nav-link wish w-nav-link">wishlist</a>
+          <div data-hover="1" data-delay="0" class="dd w-dropdown">
+            <div class="dd-toggle w-dropdown-toggle">
+              <a href="#" class="nav-link cart w-nav-link"><span class="font-icon icon-handbag"> </span>cart (0)</a>
+            </div>
+            <nav class="dd-list-border w-dropdown-list">
+              <div class="dd-content">
+                <div>No products in the cart.</div>
+              </div>
+            </nav>
+          </div>
+          <a href="#" class="nav-link wish w-nav-link"><span class="font-icon icon-heart"> </span>wishlist</a>
           <a href="#" class="nav-link menu w-nav-link"></a>
         </div>
       </div>
@@ -296,13 +353,13 @@
   </div>
   <footer class="footer">
     <div class="footer-flex-container">
-      <div>
-        <a href="#" class="footer-logo-link w-inline-block"><img src="assets/site/images/makao-logo-new.png" width="88" alt="" class="footer-image"></a>
+      <div class="footer-link-block">
+        <a href="#" class="footer-logo-link w-inline-block"><img src="images/makao-logo-new.png" width="88" alt="" class="footer-image"></a>
         <div>798 SW 2nd Ave, Miami, FL 33130<br>1498 Bryant St, San Francisco, CA</div>
         <div class="email">makao@qodeinteractive.com</div>
         <div>+456 741 852 33</div>
       </div>
-      <div>
+      <div class="footer-link-block">
         <h2 class="footer-heading">Help &amp; Information</h2>
         <ul role="list" class="w-list-unstyled">
           <li>
@@ -319,7 +376,7 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer-link-block">
         <h2 class="footer-heading">About Makao</h2>
         <ul role="list" class="w-list-unstyled">
           <li>
@@ -336,22 +393,29 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer-link-block">
         <h2 class="footer-heading">Join Our Newslleter</h2>
         <div>Want exclusive offers and first access to <br>products? Sign up for email alerts</div>
         <div class="w-form">
           <form id="email-form" name="email-form" data-name="Email Form" class="footer-form"><input type="email" class="form-input w-input" maxlength="256" name="email" data-name="Email" placeholder="Email adress" id="email" required=""><input type="submit" value="" data-wait="Please wait..." class="sumbit-btn w-button"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer-other-info">
       <div class="footer-flex-container new-setting">
-        <div>Qodeinteractive 2020</div>
-        <a href="#" class="w-inline-block"><img src="assets/site/images/footer-bottom-img.png" loading="lazy" alt=""></a>
-        <div>
+        <div class="copyright">Qodeinteractive 2020</div>
+        <a href="#" class="w-inline-block"><img src="images/footer-bottom-img.png" loading="lazy" width="179" alt=""></a>
+        <div class="soc-footer">
           <a href="#" class="nav-link soc">fb</a>
           <a href="#" class="nav-link soc">tw</a>
-          <a href="#" class="nav-link soc">pi</a>
+          <a href="#" class="nav-link soc">in</a>
+          <a href="#" class="nav-link soc margin-off">pi</a>
         </div>
       </div>
     </div>
