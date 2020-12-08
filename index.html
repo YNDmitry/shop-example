@@ -307,7 +307,11 @@
           </ul>
         </nav>
         <div class="menu-button w-nav-button">
-          <div class="w-icon-nav-menu"></div>
+          <a href="#" class="nav-link inr-menu w-inline-block">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+          </a>
         </div>
         <div class="products-items">
           <div data-hover="1" data-delay="0" class="dd w-dropdown">
@@ -327,43 +331,66 @@
             <div><span class="font-icon icon-heart"> </span>wishlist</div>
             <div class="link-botthom"></div>
           </a>
-          <a href="#" class="nav-link inr-menu w-nav-link"></a>
+          <a href="#" class="nav-link inr-menu telephone-hidden w-inline-block">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+          </a>
         </div>
       </div>
     </div>
   </header>
   <section class="container">
-    <div class="slider-wrapper">
-      <div class="slider-head">
-        <div class="slide-head">
-          <div class="slider-label">FASHION DESIGNERS</div>
-          <h1 class="slide-h">New <span class="uppercase">Brands</span> Incoming</h1>
-          <p class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </p>
-          <a href="#" class="border-btn w-button">view more</a>
+    <div data-animation="fade" data-duration="500" data-infinite="1" class="slider-head w-slider">
+      <div class="w-slider-mask">
+        <div class="slide w-slide">
+          <div class="slide-head">
+            <div class="slider-label">FASHION DESIGNERS</div>
+            <h1 class="slide-h">New <span class="uppercase">Brands</span> Incoming</h1>
+            <p class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </p>
+            <a href="#" class="border-btn w-button">view more</a>
+          </div>
         </div>
-        <div class="slide-head _2">
-          <div class="slider-label">FASHION DESIGNERS</div>
-          <h1 class="slide-h">Fresh Grament Trends</h1>
-          <p class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </p>
-          <a href="#" class="border-btn w-button">view more</a>
+        <div class="slide w-slide">
+          <div class="slide-head _2">
+            <div class="slider-label">FASHION DESIGNERS</div>
+            <h1 class="slide-h">Fresh Grament Trends</h1>
+            <p class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </p>
+            <a href="#" class="border-btn w-button">view more</a>
+          </div>
         </div>
-        <div class="slide-head _3">
-          <div class="slider-label">FASHION DESIGNERS</div>
-          <h1 class="slide-h">Fresh Grament Trends</h1>
-          <p class="slide-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </p>
-          <a href="#" class="border-btn w-button">view more</a>
+        <div class="slide w-slide">
+          <div class="slide-head _3">
+            <div class="slider-label">FASHION DESIGNERS</div>
+            <h1 class="slide-h">Fresh Grament Trends</h1>
+            <p class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </p>
+            <a href="#" class="border-btn w-button">view more</a>
+          </div>
         </div>
+      </div>
+      <div class="arrow-wrapper w-slider-arrow-left">
+        <div class="tparrow arrow-left"></div>
+      </div>
+      <div class="arrow-wrapper w-slider-arrow-right">
+        <div class="tparrow arrow-right"></div>
       </div>
       <div class="dots">
-        <div class="dot">1</div>
-        <div class="dot">2</div>
-        <div class="dot">3</div>
+        <div class="dot-wrapper">
+          <div class="dot">1</div>
+          <div class="dot-line"></div>
+        </div>
+        <div class="dot-wrapper">
+          <div class="dot">2</div>
+          <div class="dot-line"></div>
+        </div>
+        <div class="dot-wrapper">
+          <div class="dot">3</div>
+          <div class="dot-line"></div>
+        </div>
       </div>
-      <div class="tparrow tp-leftarrow"></div>
-      <div class="tparrow tp-rightarrow"></div>
     </div>
   </section>
-  <div class="container s2">
+  <section class="container s2">
     <div class="heading-wrapper">
       <div class="heading-label"><strong>SUMMER COLLECTION</strong></div>
       <h2>The <em>BEST</em> Weekly Products</h2>
@@ -371,7 +398,11 @@
     <div class="grid-items">
       <a href="#" class="card w-inline-block">
         <div class="product-hover-wrapper">
-          <div class="product-hover-mask"></div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
+          <div class="product-hover-mask">
+            <div class="product-icon"><span class="font-icon icon-repl product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-glaz product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-heart product-setting"> </span></div>
+          </div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
         </div>
         <div class="info-product-card">
           <div>
@@ -383,7 +414,11 @@
       </a>
       <a href="#" class="card w-inline-block">
         <div class="product-hover-wrapper">
-          <div class="product-hover-mask"></div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
+          <div class="product-hover-mask">
+            <div class="product-icon"><span class="font-icon icon-repl product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-glaz product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-heart product-setting"> </span></div>
+          </div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
         </div>
         <div class="info-product-card">
           <div>
@@ -395,7 +430,11 @@
       </a>
       <a href="#" class="card w-inline-block">
         <div class="product-hover-wrapper">
-          <div class="product-hover-mask"></div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
+          <div class="product-hover-mask">
+            <div class="product-icon"><span class="font-icon icon-repl product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-glaz product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-heart product-setting"> </span></div>
+          </div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
         </div>
         <div class="info-product-card">
           <div>
@@ -407,7 +446,11 @@
       </a>
       <a href="#" class="card w-inline-block">
         <div class="product-hover-wrapper">
-          <div class="product-hover-mask"></div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
+          <div class="product-hover-mask">
+            <div class="product-icon"><span class="font-icon icon-repl product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-glaz product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-heart product-setting"> </span></div>
+          </div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
         </div>
         <div class="info-product-card">
           <div>
@@ -419,7 +462,11 @@
       </a>
       <a href="#" class="card w-inline-block">
         <div class="product-hover-wrapper">
-          <div class="product-hover-mask"></div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
+          <div class="product-hover-mask">
+            <div class="product-icon"><span class="font-icon icon-repl product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-glaz product-setting"> </span></div>
+            <div class="product-icon"><span class="font-icon icon-heart product-setting"> </span></div>
+          </div><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, (max-width: 767px) 400px, (max-width: 991px) 29vw, 17vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt="">
         </div>
         <div class="info-product-card">
           <div>
@@ -431,7 +478,7 @@
       </a>
     </div>
     <div class="cards-wrapper">
-      <div class="big-card"></div>
+      <div id="card" class="big-card"><img src="assets/site/images/baba-q.png" loading="lazy" srcset="assets/site/images/baba-q-p-500.png 500w, assets/site/images/baba-q.png 1069w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, 59vw" alt="" class="bg-img"></div>
       <div class="small-grid">
         <a href="#" class="image-card w-inline-block">
           <div>LEATHER</div>
@@ -470,7 +517,7 @@
         <a href="#" class="border-btn green w-button">shop here</a>
       </div>
     </div>
-  </div>
+  </section>
   <section class="container s3">
     <div class="heading-wrapper">
       <div class="heading-label"><strong>BLOG STORIES</strong></div>
@@ -661,14 +708,14 @@
       </div>
     </div>
     <div class="grid-images">
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 96vw, (max-width: 991px) 47vw, 23vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 96vw, (max-width: 991px) 47vw, 23vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 96vw, (max-width: 991px) 47vw, 23vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 96vw, (max-width: 991px) 47vw, 23vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 96vw, (max-width: 991px) 47vw, 23vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 96vw, (max-width: 991px) 47vw, 23vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 96vw, (max-width: 991px) 47vw, 23vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 96vw, (max-width: 991px) 47vw, 23vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
+      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
+      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
+      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
+      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
+      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
+      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
+      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
+      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
     </div>
     <div class="beands-wrapper">
       <div class="client"></div>
@@ -723,13 +770,7 @@
         <h2 class="footer-heading">Join Our Newslleter</h2>
         <div>Want exclusive offers and first access to <br>products? Sign up for email alerts</div>
         <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" class="footer-form"><input type="email" class="form-input w-input" maxlength="256" name="email" data-name="Email" placeholder="Email adress" id="email" required=""><input type="submit" value="" data-wait="Please wait..." class="sumbit-btn w-button"></form>
-          <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
-          </div>
+          <form id="email-form" name="email-form" data-name="Email Form" class="footer-form"><input type="email" class="form-input w-input" maxlength="256" name="email" placeholder="Email adress" id="email" required=""><input type="submit" value="" class="sumbit-btn w-button"></form>
         </div>
       </div>
     </div>
@@ -738,10 +779,22 @@
         <div class="copyright">Qodeinteractive 2020</div>
         <a href="#" class="w-inline-block"><img src="assets/site/images/footer-bottom-img.png" loading="lazy" width="179" alt=""></a>
         <div class="soc-footer">
-          <a href="#" class="nav-link soc">fb</a>
-          <a href="#" class="nav-link soc">tw</a>
-          <a href="#" class="nav-link soc">in</a>
-          <a href="#" class="nav-link soc margin-off">pi</a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>fb</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>tw</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>pi</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>in</div>
+            <div class="link-botthom"></div>
+          </a>
         </div>
       </div>
     </div>
