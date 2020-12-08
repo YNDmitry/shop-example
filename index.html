@@ -20,7 +20,9 @@
       <a href="#" class="link-top"><span class="font-icon icon-location-pin"> </span>Find a store</a>
       <a href="#" class="link-top mail"><span class="font-icon icon-envelope"> </span>Newsletter</a>
       <form action="/search" class="search-wrapper w-form"><input type="search" class="search-input w-input" maxlength="256" name="query" placeholder="" id="search" required="">
-        <div class="search-wrapper-btn"><input type="submit" value="" id="search-btn" class="search-btn lnr-chevron-right w-button"></div>
+        <div class="search-wrapper-btn"><input type="submit" value="" class="hidden w-button">
+          <a id="search-btn" href="#" class="search-btn lnr-chevron-right w-button"></a>
+        </div>
       </form>
     </div>
     <div class="links-wrapper">
@@ -29,74 +31,333 @@
     </div>
   </div>
   <header class="header">
-    <a href="#" class="brand w-inline-block"><img src="images/makao-logo-new.png" loading="lazy" alt=""></a>
+    <a href="#" class="brand w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt=""></a>
     <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
       <div class="container">
-        <a href="#" class="brand nav telephone w-inline-block"><img src="images/makao-logo-new.png" loading="lazy" alt="" class="brand-menu"></a>
+        <a href="#" class="brand nav telephone w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt="" class="brand-menu"></a>
         <div class="soc-items">
-          <a href="#" class="nav-link soc w-nav-link">fb</a>
-          <a href="#" class="nav-link soc w-nav-link">tw</a>
-          <a href="#" class="nav-link soc w-nav-link">pi</a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>fb</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>tw</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>pi</div>
+            <div class="link-botthom"></div>
+          </a>
         </div>
         <nav role="navigation" class="nav-menu w-nav-menu">
           <ul role="list" class="list">
             <li>
               <div data-hover="1" data-delay="0" class="dd w-dropdown">
                 <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-nav-link">Home</a>
+                  <a href="#" class="nav-link w-inline-block">
+                    <div>Home</div>
+                    <div class="link-botthom"></div>
+                  </a>
                 </div>
-                <nav class="w-dropdown-list">
-                  <a href="#" class="w-dropdown-link">Link 1</a>
-                  <a href="#" class="w-dropdown-link">Link 2</a>
-                  <a href="#" class="w-dropdown-link">Link 3</a>
+                <nav class="dd-list-border abs-setting w-dropdown-list">
+                  <ul role="list" class="sub-menu w-list-unstyled">
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                  </ul>
                 </nav>
               </div>
             </li>
             <li>
               <div data-hover="1" data-delay="0" class="dd w-dropdown">
                 <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-nav-link">PAGES</a>
+                  <a href="#" class="nav-link w-inline-block">
+                    <div>pages</div>
+                    <div class="link-botthom"></div>
+                  </a>
                 </div>
-                <nav class="w-dropdown-list">
-                  <a href="#" class="w-dropdown-link">Link 1</a>
-                  <a href="#" class="w-dropdown-link">Link 2</a>
-                  <a href="#" class="w-dropdown-link">Link 3</a>
+                <nav class="dd-list-border abs-setting w-dropdown-list">
+                  <ul role="list" class="sub-menu w-list-unstyled">
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </li>
+            <li>
+              <div data-hover="1" data-delay="0" class="dd menu w-dropdown">
+                <div class="dd-toggle w-dropdown-toggle">
+                  <a href="#" class="nav-link w-inline-block">
+                    <div>shop</div>
+                    <div class="link-botthom"></div>
+                  </a>
+                </div>
+                <nav class="dd-list-border menu w-dropdown-list">
+                  <div class="dd-content">
+                    <div class="grid-wrapper">
+                      <div class="dd-menu-wrapper">
+                        <div class="dd-menu-label">Shop types</div>
+                        <ul role="list">
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dd-menu-wrapper">
+                        <div class="dd-menu-label">Shop types</div>
+                        <ul role="list">
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dd-menu-wrapper">
+                        <div class="dd-menu-label">Shop types</div>
+                        <ul role="list">
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dd-menu-wrapper">
+                        <div class="dd-menu-label">Shop types</div>
+                        <ul role="list">
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                          <li class="dd-link-margin">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </nav>
               </div>
             </li>
             <li>
               <div data-hover="1" data-delay="0" class="dd w-dropdown">
                 <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-nav-link">SHOP</a>
+                  <a href="#" class="nav-link w-inline-block">
+                    <div>lookbook</div>
+                    <div class="link-botthom"></div>
+                  </a>
                 </div>
-                <nav class="w-dropdown-list">
-                  <a href="#" class="w-dropdown-link">Link 1</a>
-                  <a href="#" class="w-dropdown-link">Link 2</a>
-                  <a href="#" class="w-dropdown-link">Link 3</a>
+                <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
+                  <ul role="list" class="sub-menu w-list-unstyled">
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin chevron">
+                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                        <div class="dd-toggle-double w-dropdown-toggle">
+                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                        </div>
+                        <nav class="dd-list-double w-dropdown-list">
+                          <div class="dd-list-double-wrapper">
+                            <a href="#" class="w-dropdown-link">Link 1</a>
+                            <a href="#" class="w-dropdown-link">Link 2</a>
+                            <a href="#" class="w-dropdown-link">Link 3</a>
+                          </div>
+                        </nav>
+                      </div>
+                    </li>
+                    <li class="dd-link-margin chevron">
+                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                        <div class="dd-toggle-double w-dropdown-toggle">
+                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                        </div>
+                        <nav class="dd-list-double w-dropdown-list">
+                          <div class="dd-list-double-wrapper">
+                            <a href="#" class="w-dropdown-link">Link 1</a>
+                            <a href="#" class="w-dropdown-link">Link 2</a>
+                            <a href="#" class="w-dropdown-link">Link 3</a>
+                          </div>
+                        </nav>
+                      </div>
+                    </li>
+                  </ul>
                 </nav>
               </div>
             </li>
             <li>
               <div data-hover="1" data-delay="0" class="dd w-dropdown">
                 <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-nav-link">Lookbook</a>
+                  <a href="#" class="nav-link w-inline-block">
+                    <div>blog</div>
+                    <div class="link-botthom"></div>
+                  </a>
                 </div>
-                <nav class="w-dropdown-list">
-                  <a href="#" class="w-dropdown-link">Link 1</a>
-                  <a href="#" class="w-dropdown-link">Link 2</a>
-                  <a href="#" class="w-dropdown-link">Link 3</a>
-                </nav>
-              </div>
-            </li>
-            <li>
-              <div data-hover="1" data-delay="0" class="dd w-dropdown">
-                <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-nav-link">Blog</a>
-                </div>
-                <nav class="w-dropdown-list">
-                  <a href="#" class="w-dropdown-link">Link 1</a>
-                  <a href="#" class="w-dropdown-link">Link 2</a>
-                  <a href="#" class="w-dropdown-link">Link 3</a>
+                <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
+                  <ul role="list" class="sub-menu w-list-unstyled">
+                    <li class="dd-link-margin">
+                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                    </li>
+                    <li class="dd-link-margin chevron">
+                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                        <div class="dd-toggle-double w-dropdown-toggle">
+                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                        </div>
+                        <nav class="dd-list-double w-dropdown-list">
+                          <div class="dd-list-double-wrapper">
+                            <a href="#" class="w-dropdown-link">Link 1</a>
+                            <a href="#" class="w-dropdown-link">Link 2</a>
+                            <a href="#" class="w-dropdown-link">Link 3</a>
+                          </div>
+                        </nav>
+                      </div>
+                    </li>
+                    <li class="dd-link-margin chevron">
+                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                        <div class="dd-toggle-double w-dropdown-toggle">
+                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                        </div>
+                        <nav class="dd-list-double w-dropdown-list">
+                          <div class="dd-list-double-wrapper">
+                            <a href="#" class="w-dropdown-link">Link 1</a>
+                            <a href="#" class="w-dropdown-link">Link 2</a>
+                            <a href="#" class="w-dropdown-link">Link 3</a>
+                          </div>
+                        </nav>
+                      </div>
+                    </li>
+                  </ul>
                 </nav>
               </div>
             </li>
@@ -108,7 +369,10 @@
         <div class="products-items">
           <div data-hover="1" data-delay="0" class="dd w-dropdown">
             <div class="dd-toggle w-dropdown-toggle">
-              <a href="#" class="nav-link cart w-nav-link"><span class="font-icon icon-handbag"> </span>cart (0)</a>
+              <a href="#" class="nav-link cart w-inline-block">
+                <div><span class="font-icon icon-handbag"> </span>cart (0)</div>
+                <div class="link-botthom"></div>
+              </a>
             </div>
             <nav class="dd-list-border w-dropdown-list">
               <div class="dd-content">
@@ -116,8 +380,11 @@
               </div>
             </nav>
           </div>
-          <a href="#" class="nav-link wish w-nav-link"><span class="font-icon icon-heart"> </span>wishlist</a>
-          <a href="#" class="nav-link menu w-nav-link"></a>
+          <a href="#" class="nav-link wish w-inline-block">
+            <div><span class="font-icon icon-heart"> </span>wishlist</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link inr-menu w-nav-link"></a>
         </div>
       </div>
     </div>
@@ -354,7 +621,7 @@
   <footer class="footer">
     <div class="footer-flex-container">
       <div class="footer-link-block">
-        <a href="#" class="footer-logo-link w-inline-block"><img src="images/makao-logo-new.png" width="88" alt="" class="footer-image"></a>
+        <a href="#" class="footer-logo-link w-inline-block"><img src="assets/site/images/makao-logo-new.png" width="88" alt="" class="footer-image"></a>
         <div>798 SW 2nd Ave, Miami, FL 33130<br>1498 Bryant St, San Francisco, CA</div>
         <div class="email">makao@qodeinteractive.com</div>
         <div>+456 741 852 33</div>
@@ -410,7 +677,7 @@
     <div class="footer-other-info">
       <div class="footer-flex-container new-setting">
         <div class="copyright">Qodeinteractive 2020</div>
-        <a href="#" class="w-inline-block"><img src="images/footer-bottom-img.png" loading="lazy" width="179" alt=""></a>
+        <a href="#" class="w-inline-block"><img src="assets/site/images/footer-bottom-img.png" loading="lazy" width="179" alt=""></a>
         <div class="soc-footer">
           <a href="#" class="nav-link soc">fb</a>
           <a href="#" class="nav-link soc">tw</a>
@@ -446,8 +713,12 @@
     scrollTop = $(window).scrollTop()
     if (scrollTop >= 250) {
     $('.navbar').addClass('show')
+    $('.soc-items').addClass('hidden')
+    $('.brand.nav').removeClass('telephone')
     } else if (scrollTop < 150) {
     $('.navbar').removeClass('show')
+    $('.soc-items').removeClass('hidden')
+    $('.brand.nav').addClass('telephone')
     }
     })
     });
