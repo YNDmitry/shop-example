@@ -798,14 +798,8 @@ li {
 .grid-images {
   display: -ms-grid;
   display: grid;
-  height: 100%;
   margin-top: 70px;
   margin-bottom: 100px;
-  justify-items: stretch;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   grid-column-gap: 20px;
@@ -817,22 +811,7 @@ li {
 }
 
 .image {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
 }
 
 .beands-wrapper {
@@ -1544,10 +1523,6 @@ li {
 }
 
 .image-gallery {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-width: none;
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
