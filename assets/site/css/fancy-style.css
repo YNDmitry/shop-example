@@ -35,18 +35,3 @@
   cursor: pointer;
   z-index: 99997;
 }
-
-.w-slider-dot {
-	background: rgba(0, 0, 0, 0.0);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0);
-}
-
-.w-slider-dot.w-active {
-	background: rgba(0, 0, 0, 0.0);
-  border-bottom: 1px solid #fff;
-}  
-
-select {-webkit-appearance: none;}
-select::-ms-expand {display: none;}
-
-

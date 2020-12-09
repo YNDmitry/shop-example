@@ -36,7 +36,6 @@
       <a href="#" class="brand w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt=""></a>
       <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
         <div class="nav-container">
-          <a href="#" class="brand nav hidden w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt="" class="brand-menu"></a>
           <a href="#" class="brand nav telephone w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt="" class="brand-menu"></a>
           <div class="soc-items">
             <a href="#" class="nav-link soc w-inline-block">
@@ -382,7 +381,7 @@
             <a data-remodal-target="sidemodal" href="#" class="nav-link inr-menu telephone-hidden w-inline-block">
               <div class="burger"></div>
               <div class="burger"></div>
-              <div class="burger"></div>
+              <div class="burger _3"></div>
             </a>
           </div>
         </div>
@@ -404,7 +403,9 @@
       <div class="left-side-setting">
         <div class="widget-pice-filter">
           <div class="widget-title">Price Filter</div>
-          <div id="slider-range" class="slider-ui"></div>
+          <div id="slider-range" class="slider-ui">
+            <div class="ui-slider-handle"></div>
+          </div>
           <div class="price-slider-amount">
             <div id="amount">Price: <span class="from">$42</span> — <span class="to">$150</span></div>
             <a href="#" class="more-btn w-inline-block">
@@ -533,13 +534,12 @@
         <div class="result-block">
           <div>Showing 1–15 of 36 results</div>
           <div class="select-wrapper w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" class="form-select-wrapper"><select name="select" data-name="select" class="select w-select">
+            <form name="email-form" class="form-select-wrapper"><select name="select" class="select w-select">
                 <option value="">Default sorting</option>
                 <option value="First">First Choice</option>
                 <option value="Second">Second Choice</option>
                 <option value="Third">Third Choice</option>
               </select>
-              <div class="icon-select"></div>
             </form>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
@@ -876,42 +876,41 @@
       </div>
     </div>
   </footer>
+  <div class="border-btn green top-btn">
+    <a href="#header" class="border-btn-link w-inline-block"></a>
+    <div class="border-animation-wrapper">
+      <div class="b _1"></div>
+      <div class="b _2"></div>
+      <div class="b _3"></div>
+      <div class="b _4"></div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="assets/site/js/index.js" type="text/javascript"></script>
-  <script>
-$(document).ready(() => {
-let scrollTop = 0
-$(window).scroll(() => {
-scrollTop = $(window).scrollTop()
-if (scrollTop >= 250) {
-$('.navbar').addClass('show')
-$('.border-btn.green.top-btn').addClass('show')
-$('.soc-items').addClass('hidden')
-$('.brand.nav.hidden').addClass('show')
-} else if (scrollTop < 150) {
-$('.navbar').removeClass('show')
-$('.border-btn.green.top-btn').removeClass('show')
-$('.soc-items').removeClass('hidden')
-$('.brand.nav.hidden').removeClass('show')
-}
-})
-});
-</script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-$(() => {
-  $( "#slider-range" ).slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [ 75, 300 ],
-    slide: (( event, ui ) => {
-      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+    $(document).ready(() => {
+    let scrollTop = 0
+    $(window).scroll(() => {
+    scrollTop = $(window).scrollTop()
+    if (scrollTop >= 250) {
+    $('.navbar').addClass('show')
+    $('.border-btn.green.top-btn').addClass('show')
+    $('.soc-items').addClass('hidden')
+    $('.brand.nav.telephone').removeClass('telephone')
+    } else if (scrollTop < 150) {
+    $('.navbar').removeClass('show')
+    $('.border-btn.green.top-btn').removeClass('show')
+    $('.soc-items').removeClass('hidden')
+    $('.brand.nav').addClass('telephone')
+    }
     })
- });
-  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-});
+    });
 </script>
+  <script>
+    $( "#slider-range" ).slider({
+      range: true
+    });
+    </script>
 </body>
 </html>
