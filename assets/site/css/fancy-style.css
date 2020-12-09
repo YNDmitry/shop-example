@@ -1,0 +1,52 @@
+.fancybox-button {
+  background: rgba(0, 0, 0, 0.0) !important;
+}
+
+.fancybox-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  height: 100%;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.fancy-arrowLeft {
+  background-image: url(../images/slider-arrow-left.svg);
+  width: 35px;
+  height: 50px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 99997;
+}
+
+.fancy-arrowRight {
+  background-image: url(../images/slider-arrow-right.svg);
+  width: 35px;
+  height: 50px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 99997;
+}
+
+.w-slider-dot {
+	background: rgba(0, 0, 0, 0.0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0);
+}
+
+.w-slider-dot.w-active {
+	background: rgba(0, 0, 0, 0.0);
+  border-bottom: 1px solid #fff;
+}  
+
+select {-webkit-appearance: none;}
+select::-ms-expand {display: none;}
+
+
