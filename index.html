@@ -12,358 +12,466 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="assets/site/images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="assets/site/images/webclip.png" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <!-- remodal styles -->
+  <style>
+    [data-remodal-id = "modal"] {
+      max-width: auto;
+      width: auto;
+      height: auto;
+      padding: 0px;
+      background-color: #fafafa;
+    }
+    .remodal-wrapper {
+        background: rgba(255,255,255,.8);
+        padding: 0;
+    }
+    .sideModal.remodal-wrapper  {
+      background: rgba(0,0,0,.0);
+      text-align: right;
+      padding-right: 1px;
+    }
+    @media screen and (min-width: 992px) {
+    .sideModal.remodal-wrapper {
+    overflow: hidden;
+    }
+    }
+    .sideModal.remodal.remodal-is-opening {
+      animation-duration: 0.4s;
+      animation-name: slidein;
+    }
+    .sideModal.remodal.remodal-is-closing {
+      animation-duration: 0.4s;
+      animation-name: slideout;
+    }
+    .remodal-overlay {
+      background: rgba(0, 0, 0, 0.0);
+    }
+    .remodal-wrapper {
+        padding: 0;
+    }
+    @keyframes slidein {   
+      from {transform: translate3d(90%, 0, 0);}   
+      to {transform: none;} 
+    }
+    @keyframes slideout {   
+      from {transform: none;}   
+      to {transform: translate3d(100%, 0, 0);} 
+    }
+  </style>
+  <!-- /remodal styles -->
 </head>
 <body>
-  <div class="info-block-top">
-    <div class="links-wrapper">
-      <a href="#" class="link-top"><span class="font-icon icon-location-pin"> </span>Find a store</a>
-      <a href="#" class="link-top mail"><span class="font-icon icon-envelope"> </span>Newsletter</a>
-      <form action="/search" class="search-wrapper w-form"><input type="search" class="search-input w-input" maxlength="256" name="query" placeholder="" id="search" required="">
-        <div class="search-wrapper-btn">
-          <a id="search-btn" href="#" class="search-btn lnr-chevron-right w-button"></a>
-        </div>
-      </form>
-    </div>
-    <div class="links-wrapper">
-      <a href="#" class="link-top telephone"><span class="font-icon icon-phone"> </span>+33 (0) 559 6631</a>
-      <a href="#" class="link-top profil"><span class="font-icon icon-user"> </span>My account</a>
-    </div>
-  </div>
-  <header class="header">
-    <a href="#" class="brand w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt=""></a>
-    <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
-      <div class="nav-container">
-        <a href="#" class="brand nav telephone w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt="" class="brand-menu"></a>
-        <div class="soc-items">
-          <a href="#" class="nav-link soc w-inline-block">
-            <div>fb</div>
-            <div class="link-botthom"></div>
-          </a>
-          <a href="#" class="nav-link soc w-inline-block">
-            <div>tw</div>
-            <div class="link-botthom"></div>
-          </a>
-          <a href="#" class="nav-link soc w-inline-block">
-            <div>pi</div>
-            <div class="link-botthom"></div>
-          </a>
-        </div>
-        <nav role="navigation" class="nav-menu w-nav-menu">
-          <ul role="list" class="list">
-            <li>
-              <div data-hover="1" data-delay="0" class="dd w-dropdown">
-                <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-inline-block">
-                    <div>Home</div>
-                    <div class="link-botthom"></div>
-                  </a>
-                </div>
-                <nav class="dd-list-border abs-setting w-dropdown-list">
-                  <ul role="list" class="sub-menu w-list-unstyled">
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </li>
-            <li>
-              <div data-hover="1" data-delay="0" class="dd w-dropdown">
-                <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-inline-block">
-                    <div>pages</div>
-                    <div class="link-botthom"></div>
-                  </a>
-                </div>
-                <nav class="dd-list-border abs-setting w-dropdown-list">
-                  <ul role="list" class="sub-menu w-list-unstyled">
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </li>
-            <li>
-              <div data-hover="1" data-delay="0" class="dd w-dropdown">
-                <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-inline-block">
-                    <div>shop</div>
-                    <div class="link-botthom"></div>
-                  </a>
-                </div>
-                <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
-                  <ul role="list" class="sub-menu w-list-unstyled">
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin chevron">
-                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
-                        <div class="dd-toggle-double w-dropdown-toggle">
-                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                        </div>
-                        <nav class="dd-list-double w-dropdown-list">
-                          <div class="dd-list-double-wrapper">
-                            <a href="#" class="w-dropdown-link">Link 1</a>
-                            <a href="#" class="w-dropdown-link">Link 2</a>
-                            <a href="#" class="w-dropdown-link">Link 3</a>
-                          </div>
-                        </nav>
-                      </div>
-                    </li>
-                    <li class="dd-link-margin chevron">
-                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
-                        <div class="dd-toggle-double w-dropdown-toggle">
-                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                        </div>
-                        <nav class="dd-list-double w-dropdown-list">
-                          <div class="dd-list-double-wrapper">
-                            <a href="#" class="w-dropdown-link">Link 1</a>
-                            <a href="#" class="w-dropdown-link">Link 2</a>
-                            <a href="#" class="w-dropdown-link">Link 3</a>
-                          </div>
-                        </nav>
-                      </div>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </li>
-            <li>
-              <div data-hover="1" data-delay="0" class="dd w-dropdown">
-                <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-inline-block">
-                    <div>lookbook</div>
-                    <div class="link-botthom"></div>
-                  </a>
-                </div>
-                <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
-                  <ul role="list" class="sub-menu w-list-unstyled">
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin chevron">
-                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
-                        <div class="dd-toggle-double w-dropdown-toggle">
-                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                        </div>
-                        <nav class="dd-list-double w-dropdown-list">
-                          <div class="dd-list-double-wrapper">
-                            <a href="#" class="w-dropdown-link">Link 1</a>
-                            <a href="#" class="w-dropdown-link">Link 2</a>
-                            <a href="#" class="w-dropdown-link">Link 3</a>
-                          </div>
-                        </nav>
-                      </div>
-                    </li>
-                    <li class="dd-link-margin chevron">
-                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
-                        <div class="dd-toggle-double w-dropdown-toggle">
-                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                        </div>
-                        <nav class="dd-list-double w-dropdown-list">
-                          <div class="dd-list-double-wrapper">
-                            <a href="#" class="w-dropdown-link">Link 1</a>
-                            <a href="#" class="w-dropdown-link">Link 2</a>
-                            <a href="#" class="w-dropdown-link">Link 3</a>
-                          </div>
-                        </nav>
-                      </div>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </li>
-            <li>
-              <div data-hover="1" data-delay="0" class="dd w-dropdown">
-                <div class="dd-toggle w-dropdown-toggle">
-                  <a href="#" class="nav-link w-inline-block">
-                    <div>blog</div>
-                    <div class="link-botthom"></div>
-                  </a>
-                </div>
-                <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
-                  <ul role="list" class="sub-menu w-list-unstyled">
-                    <li class="dd-link-margin">
-                      <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                    </li>
-                    <li class="dd-link-margin chevron">
-                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
-                        <div class="dd-toggle-double w-dropdown-toggle">
-                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                        </div>
-                        <nav class="dd-list-double w-dropdown-list">
-                          <div class="dd-list-double-wrapper">
-                            <a href="#" class="w-dropdown-link">Link 1</a>
-                            <a href="#" class="w-dropdown-link">Link 2</a>
-                            <a href="#" class="w-dropdown-link">Link 3</a>
-                          </div>
-                        </nav>
-                      </div>
-                    </li>
-                    <li class="dd-link-margin chevron">
-                      <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
-                        <div class="dd-toggle-double w-dropdown-toggle">
-                          <a href="#" class="dd-link w-dropdown-link">Link 1</a>
-                        </div>
-                        <nav class="dd-list-double w-dropdown-list">
-                          <div class="dd-list-double-wrapper">
-                            <a href="#" class="w-dropdown-link">Link 1</a>
-                            <a href="#" class="w-dropdown-link">Link 2</a>
-                            <a href="#" class="w-dropdown-link">Link 3</a>
-                          </div>
-                        </nav>
-                      </div>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <div class="menu-button w-nav-button">
-          <a href="#" class="nav-link inr-menu w-inline-block">
-            <div class="burger"></div>
-            <div class="burger"></div>
-            <div class="burger"></div>
-          </a>
-        </div>
-        <div class="products-items">
-          <div data-hover="1" data-delay="0" class="dd w-dropdown">
-            <div class="dd-toggle w-dropdown-toggle">
-              <a href="#" class="nav-link cart w-inline-block">
-                <div><span class="font-icon icon-handbag"> </span>cart (0)</div>
-                <div class="link-botthom"></div>
-              </a>
-            </div>
-            <nav class="dd-list-border w-dropdown-list">
-              <div class="dd-content">
-                <div>No products in the cart.</div>
-              </div>
-            </nav>
+  <header id="header">
+    <div class="info-block-top">
+      <div class="links-wrapper">
+        <a href="#" class="link-top"><span class="font-icon icon-location-pin"> </span>Find a store</a>
+        <a href="#" class="link-top mail"><span class="font-icon icon-envelope"> </span>Newsletter</a>
+        <form action="/search" class="search-wrapper w-form"><input type="search" class="search-input w-input" maxlength="256" name="query" placeholder="" id="search" required="">
+          <div class="search-wrapper-btn"><input type="submit" value="" class="hidden w-button">
+            <a id="search-btn" href="#" class="search-btn lnr-chevron-right w-button"></a>
           </div>
-          <a href="#" class="nav-link wish w-inline-block">
-            <div><span class="font-icon icon-heart"> </span>wishlist</div>
-            <div class="link-botthom"></div>
-          </a>
-          <a href="#" class="nav-link inr-menu telephone-hidden w-inline-block">
-            <div class="burger"></div>
-            <div class="burger"></div>
-            <div class="burger"></div>
-          </a>
+        </form>
+      </div>
+      <div class="links-wrapper">
+        <a href="#" class="link-top telephone"><span class="font-icon icon-phone"> </span>+33 (0) 559 6631</a>
+        <a href="#" class="link-top profil"><span class="font-icon icon-user"> </span>My account</a>
+      </div>
+    </div>
+    <div class="header">
+      <a href="#" class="brand w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt=""></a>
+      <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
+        <div class="nav-container">
+          <a href="#" class="brand nav hidden w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt="" class="brand-menu"></a>
+          <a href="#" class="brand nav telephone w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt="" class="brand-menu"></a>
+          <div class="soc-items">
+            <a href="#" class="nav-link soc w-inline-block">
+              <div>fb</div>
+              <div class="link-botthom"></div>
+            </a>
+            <a href="#" class="nav-link soc w-inline-block">
+              <div>tw</div>
+              <div class="link-botthom"></div>
+            </a>
+            <a href="#" class="nav-link soc w-inline-block">
+              <div>pi</div>
+              <div class="link-botthom"></div>
+            </a>
+          </div>
+          <nav role="navigation" class="nav-menu w-nav-menu">
+            <ul role="list" class="list">
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>Home</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>pages</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>shop</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>lookbook</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="w-dropdown-link">Link 1</a>
+                              <a href="#" class="w-dropdown-link">Link 2</a>
+                              <a href="#" class="w-dropdown-link">Link 3</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>blog</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <a href="#" class="nav-link inr-menu w-inline-block">
+              <div class="burger _1"></div>
+              <div class="burger _2"></div>
+              <div class="burger _3"></div>
+            </a>
+          </div>
+          <div class="products-items">
+            <div data-hover="1" data-delay="0" class="dd w-dropdown">
+              <div class="dd-toggle w-dropdown-toggle">
+                <a href="#" class="nav-link cart w-inline-block">
+                  <div><span class="font-icon icon-handbag"> </span>cart (0)</div>
+                  <div class="link-botthom"></div>
+                </a>
+              </div>
+              <nav class="dd-list-border w-dropdown-list">
+                <div class="dd-content">
+                  <a href="#" class="dd-cart-item w-inline-block">
+                    <div class="item-image"><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" sizes="100vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt=""></div>
+                    <div class="e-content">
+                      <div>Pleated Skirt</div>
+                      <div class="card-price">1 x $80.00</div>
+                    </div>
+                    <div class="close"></div>
+                  </a>
+                  <a href="#" class="dd-cart-item w-inline-block">
+                    <div class="item-image"><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" sizes="100vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt=""></div>
+                    <div class="e-content">
+                      <div>Pleated Skirt</div>
+                      <div class="card-price">1 x $80.00</div>
+                    </div>
+                    <div class="close"></div>
+                  </a>
+                  <div class="total-block">
+                    <div class="text-bl">
+                      <div>Total:</div>
+                      <div class="price-dd">$160.00</div>
+                    </div>
+                    <div class="dd-btns-block">
+                      <div class="border-btn green">
+                        <a href="#" class="border-btn-link w-inline-block">
+                          <div>checkout</div>
+                        </a>
+                        <div class="border-animation-wrapper">
+                          <div class="b _1"></div>
+                          <div class="b _2"></div>
+                          <div class="b _3"></div>
+                          <div class="b _4"></div>
+                        </div>
+                      </div>
+                      <div class="border-btn black">
+                        <a href="#" class="border-btn-link black w-inline-block">
+                          <div>view cart</div>
+                        </a>
+                        <div class="border-animation-wrapper dd-border">
+                          <div class="b _1 black"></div>
+                          <div class="b _2 black"></div>
+                          <div class="b _3 black"></div>
+                          <div class="b _4 black"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <a href="#" class="nav-link wish w-inline-block">
+              <div><span class="font-icon icon-heart"> </span>wishlist</div>
+              <div class="link-botthom"></div>
+            </a>
+            <a data-remodal-target="sidemodal" href="#" class="nav-link inr-menu telephone-hidden w-inline-block">
+              <div class="burger"></div>
+              <div class="burger"></div>
+              <div class="burger"></div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </header>
   <section class="container">
-    <div data-animation="fade" data-duration="500" data-infinite="1" class="slider-head w-slider">
+    <div data-animation="fade" data-nav-spacing="14" data-duration="500" data-infinite="1" class="slider-head w-slider">
       <div class="w-slider-mask">
         <div class="slide w-slide">
           <div class="slide-head">
             <div class="slider-label">FASHION DESIGNERS</div>
-            <h1 class="slide-h">New <span class="uppercase">Brands</span> Incoming</h1>
-            <p class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </p>
-            <a href="#" class="border-btn w-button">view more</a>
+            <div class="slide-h">New <span class="uppercase">Brands</span> Incoming</div>
+            <div class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </div>
+            <div class="border-btn">
+              <a href="#" class="border-btn-link w-inline-block">
+                <div>view more</div>
+              </a>
+              <div class="border-animation-wrapper">
+                <div class="b _1"></div>
+                <div class="b _2"></div>
+                <div class="b _3"></div>
+                <div class="b _4"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="slide w-slide">
           <div class="slide-head _2">
             <div class="slider-label">FASHION DESIGNERS</div>
-            <h1 class="slide-h">Fresh Grament Trends</h1>
-            <p class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </p>
+            <div class="slide-h">Fresh Grament Trends</div>
+            <div class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </div>
             <a href="#" class="border-btn w-button">view more</a>
           </div>
         </div>
         <div class="slide w-slide">
           <div class="slide-head _3">
             <div class="slider-label">FASHION DESIGNERS</div>
-            <h1 class="slide-h">Fresh Grament Trends</h1>
-            <p class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </p>
+            <div class="slide-h">Fresh Grament Trends</div>
+            <div class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </div>
             <a href="#" class="border-btn w-button">view more</a>
           </div>
         </div>
@@ -374,20 +482,7 @@
       <div class="arrow-wrapper w-slider-arrow-right">
         <div class="tparrow arrow-right"></div>
       </div>
-      <div class="dots">
-        <div class="dot-wrapper">
-          <div class="dot">1</div>
-          <div class="dot-line"></div>
-        </div>
-        <div class="dot-wrapper">
-          <div class="dot">2</div>
-          <div class="dot-line"></div>
-        </div>
-        <div class="dot-wrapper">
-          <div class="dot">3</div>
-          <div class="dot-line"></div>
-        </div>
-      </div>
+      <div class="dots w-slider-nav w-num"></div>
     </div>
   </section>
   <section class="container s2">
@@ -478,35 +573,35 @@
       </a>
     </div>
     <div class="cards-wrapper">
-      <div id="card" class="big-card"><img src="assets/site/images/baba-q.png" loading="lazy" srcset="assets/site/images/baba-q-p-500.png 500w, assets/site/images/baba-q.png 1069w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, 59vw" alt="" class="bg-img"></div>
+      <div id="card" class="big-card"><img src="assets/site/images/baba-q.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, 59vw" srcset="assets/site/images/baba-q-p-500.png 500w, assets/site/images/baba-q.png 1069w" alt="" class="bg-img"></div>
       <div class="small-grid">
         <a href="#" class="image-card w-inline-block">
           <div>LEATHER</div>
-          <h4>Essentials</h4>
+          <div class="heading-image-card">Essentials</div>
         </a>
         <a href="#" class="image-card sumki w-inline-block"></a>
         <a href="#" class="image-card baba-w w-inline-block"></a>
         <a href="#" class="image-card w-inline-block">
           <div>LEATHER</div>
-          <h4>Essentials</h4>
+          <div class="heading-image-card">Essentials</div>
         </a>
       </div>
     </div>
     <div class="icons-cards-wrapper">
-      <div class="icon-card"><img src="assets/site/images/h10-icon-img-1.png" loading="lazy" alt="">
-        <h4 class="label">24 Service</h4>
+      <div class="icon-card"><img src="assets/site/images/h10-icon-img-1.png" loading="lazy" alt="" class="icon">
+        <h4>24 Service</h4>
         <p class="icon-p">Anetus et malea fames ac, turpisiny egestas sed tempus.</p>
       </div>
-      <div class="icon-card"><img src="assets/site/images/h10-icon-img-2.png" loading="lazy" alt="">
-        <h4 class="label">Free Returns</h4>
+      <div class="icon-card"><img src="assets/site/images/h10-icon-img-2.png" loading="lazy" alt="" class="icon">
+        <h4>Free Returns</h4>
         <p class="icon-p">Anetus et malea fames ac, turpisiny egestas sed tempus.</p>
       </div>
-      <div class="icon-card"><img src="assets/site/images/h10-icon-img-3.png" loading="lazy" alt="">
-        <h4 class="label">Order Tracking</h4>
+      <div class="icon-card"><img src="assets/site/images/h10-icon-img-3.png" loading="lazy" alt="" class="icon">
+        <h4>Order Tracking</h4>
         <p class="icon-p">Anetus et malea fames ac, turpisiny egestas sed tempus.</p>
       </div>
-      <div class="icon-card"><img src="assets/site/images/h10-icon-img-4.png" loading="lazy" alt="">
-        <h4 class="label">Fast Delivery</h4>
+      <div class="icon-card"><img src="assets/site/images/h10-icon-img-4.png" loading="lazy" alt="" class="icon">
+        <h4>Fast Delivery</h4>
         <p class="icon-p">Anetus et malea fames ac, turpisiny egestas sed tempus.</p>
       </div>
     </div>
@@ -514,7 +609,17 @@
       <div class="sep-content">
         <h2>Top <em>DESIGNERS</em> Picks</h2>
         <p>Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamco <br>rpeleo, eget euism od orci suid.</p>
-        <a href="#" class="border-btn green w-button">shop here</a>
+        <div class="border-btn green">
+          <a href="#" class="border-btn-link w-inline-block">
+            <div>view more</div>
+          </a>
+          <div class="border-animation-wrapper">
+            <div class="b _1"></div>
+            <div class="b _2"></div>
+            <div class="b _3"></div>
+            <div class="b _4"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -532,7 +637,7 @@
             <div class="margin">/</div>
             <div>Fashion</div>
           </a>
-          <h4 class="blog-heading">You Need To Buy Only One Thing This Spring</h4>
+          <h4>You Need To Buy Only One Thing This Spring</h4>
           <a href="#" class="more-btn w-inline-block">
             <div>read more</div>
             <div class="line-more-btn"></div>
@@ -562,7 +667,7 @@
             <div class="margin">/</div>
             <div>Fashion</div>
           </a>
-          <h4 class="blog-heading">You Need To Buy Only One Thing This Spring</h4>
+          <h4>You Need To Buy Only One Thing This Spring</h4>
           <a href="#" class="more-btn w-inline-block">
             <div>read more</div>
             <div class="line-more-btn"></div>
@@ -571,10 +676,18 @@
       </div>
     </div>
     <div class="video-block">
-      <a href="#" class="play-btn w-button"></a>
+      <div class="border-btn play-btn">
+        <a href="#" class="border-btn-link w-inline-block"></a>
+        <div class="border-animation-wrapper">
+          <div class="b _1"></div>
+          <div class="b _2"></div>
+          <div class="b _3"></div>
+          <div class="b _4"></div>
+        </div>
+      </div>
     </div>
   </section>
-  <div class="container s4">
+  <section class="container s4">
     <div class="heading-wrapper">
       <div class="heading-label"><strong>FASHION DESIGNERS</strong></div>
       <h2>Our <em>DESGNERS</em> Dream Team</h2>
@@ -603,7 +716,7 @@
           </div><img src="assets/site/images/baba.png" loading="lazy" alt="">
         </div>
         <div class="heading-label model-label">MODEL</div>
-        <h4 class="model-title">Lisa Cooper</h4>
+        <h4>Lisa Cooper</h4>
       </div>
       <div class="card-model">
         <div class="model-img-wrapper">
@@ -628,7 +741,7 @@
           </div><img src="assets/site/images/baba.png" loading="lazy" alt="">
         </div>
         <div class="heading-label model-label">MODEL</div>
-        <h4 class="model-title">Lisa Cooper</h4>
+        <h4>Lisa Cooper</h4>
       </div>
       <div class="card-model">
         <div class="model-img-wrapper">
@@ -653,7 +766,7 @@
           </div><img src="assets/site/images/baba.png" loading="lazy" alt="">
         </div>
         <div class="heading-label model-label">MODEL</div>
-        <h4 class="model-title">Lisa Cooper</h4>
+        <h4>Lisa Cooper</h4>
       </div>
       <div class="card-model">
         <div class="model-img-wrapper">
@@ -678,7 +791,7 @@
           </div><img src="assets/site/images/baba.png" loading="lazy" alt="">
         </div>
         <div class="heading-label model-label">MODEL</div>
-        <h4 class="model-title">Lisa Cooper</h4>
+        <h4>Lisa Cooper</h4>
       </div>
     </div>
     <div class="otz-block">
@@ -690,16 +803,16 @@
     <div class="slider-otz-wrapper">
       <div class="slider-otz">
         <div class="slide-otz">
-          <p class="p-otz">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-          <h4 class="model-title">Maurice Cressac</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          <h4>Maurice Cressac</h4>
         </div>
         <div class="slide-otz">
           <p class="p-otz">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-          <h4 class="model-title">Maurice Cressac</h4>
+          <h4>Maurice Cressac</h4>
         </div>
         <div class="slide-otz">
           <p class="p-otz">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-          <h4 class="model-title">Maurice Cressac</h4>
+          <h4>Maurice Cressac</h4>
         </div>
       </div>
       <div class="slider-nav">
@@ -708,14 +821,14 @@
       </div>
     </div>
     <div class="grid-images">
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
-      <div class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 47vw, 26vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></div>
+      <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+      <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+      <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+      <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+      <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+      <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+      <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+      <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
     </div>
     <div class="beands-wrapper">
       <div class="client"></div>
@@ -723,18 +836,18 @@
       <div class="client"></div>
       <div class="client"></div>
     </div>
-  </div>
+  </section>
   <footer class="footer">
     <div class="footer-flex-container">
       <div class="footer-link-block">
         <a href="#" class="footer-logo-link w-inline-block"><img src="assets/site/images/makao-logo-new.png" width="88" alt="" class="footer-image"></a>
-        <div>798 SW 2nd Ave, Miami, FL 33130<br>1498 Bryant St, San Francisco, CA</div>
+        <div class="footer-text">798 SW 2nd Ave, Miami, FL 33130<br>1498 Bryant St, San Francisco, CA</div>
         <div class="email">makao@qodeinteractive.com</div>
-        <div>+456 741 852 33</div>
+        <div class="footer-text">+456 741 852 33</div>
       </div>
       <div class="footer-link-block">
-        <h2 class="footer-heading">Help &amp; Information</h2>
-        <ul role="list" class="w-list-unstyled">
+        <h4>Help &amp; Information</h4>
+        <ul role="list" class="list-links-footer w-list-unstyled">
           <li>
             <a href="#" class="footer-link">Text Link</a>
           </li>
@@ -750,8 +863,8 @@
         </ul>
       </div>
       <div class="footer-link-block">
-        <h2 class="footer-heading">About Makao</h2>
-        <ul role="list" class="w-list-unstyled">
+        <h4>About Makao</h4>
+        <ul role="list" class="list-links-footer w-list-unstyled">
           <li>
             <a href="#" class="footer-link">Text Link</a>
           </li>
@@ -767,10 +880,16 @@
         </ul>
       </div>
       <div class="footer-link-block">
-        <h2 class="footer-heading">Join Our Newslleter</h2>
-        <div>Want exclusive offers and first access to <br>products? Sign up for email alerts</div>
+        <h4>Join Our Newslleter</h4>
+        <div class="footer-text margin-top">Want exclusive offers and first access to <br>products? Sign up for email alerts</div>
         <div class="w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" class="footer-form"><input type="email" class="form-input w-input" maxlength="256" name="email" placeholder="Email adress" id="email" required=""><input type="submit" value="" class="sumbit-btn w-button"></form>
+          <form id="email-form" name="email-form" data-name="Email Form" class="footer-form"><input type="email" class="form-input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email adress" id="email-2" required=""><input type="submit" value="" data-wait="Please wait..." class="sumbit-btn w-button"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
         </div>
       </div>
     </div>
@@ -799,9 +918,91 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <div class="border-btn green top-btn">
+    <a href="#header" class="border-btn-link w-inline-block"></a>
+    <div class="border-animation-wrapper">
+      <div class="b _1"></div>
+      <div class="b _2"></div>
+      <div class="b _3"></div>
+      <div class="b _4"></div>
+    </div>
+  </div>
+  <div data-remodal-id="sidemodal" data-remodal-options="modifier: sideModal" class="modal-wrapper remodal">
+    <div class="modal-block">
+      <a href="#" class="brand-modal w-inline-block"><img src="assets/site/images/makao-logo-new.png" alt=""></a>
+      <div>798 SW 2nd Ave, Miami, FL 33130<br>1498 Bryant St, San Francisco, CA</div>
+      <div class="email-modal">makao@qodeinteractive.com</div>
+      <div>+456 741 852 33</div>
+    </div>
+    <div class="grid-wrapper">
+      <div class="hach-tag">#MAKAO_FASHION</div>
+      <div class="grid-images margin-setting">
+        <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+        <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+        <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+        <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+        <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+        <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+        <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+        <a href="assets/site/images/h1-img-6.jpg" data-fancybox class="image"><img src="assets/site/images/h1-img-6.jpg" loading="lazy" width="500" sizes="(max-width: 767px) 351.75px, (max-width: 991px) 172.7249755859375px, 8vw" srcset="assets/site/images/h1-img-6-p-500.jpeg 500w, assets/site/images/h1-img-6-p-800.jpeg 800w, assets/site/images/h1-img-6.jpg 1000w" alt="" class="image-gallery"></a>
+      </div>
+      <div class="soc-modal">
+        <div class="soc-text">follow us:</div>
+        <div class="soc-wrapper">
+          <a href="#" class="nav-link w-inline-block">
+            <div>fb</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link w-inline-block">
+            <div>tw</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link w-inline-block">
+            <div>pi</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link w-inline-block">
+            <div>in</div>
+            <div class="link-botthom"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div data-remodal-action="close" class="close modal"></div>
+  </div>
+  <div data-remodal-id="modal" class="modal-center remodal">
+    <div class="remodal-margin">
+      <div><img src="assets/site/images/pop-up-img.jpg" loading="lazy" alt=""></div>
+      <div class="info-wrapper">
+        <div>Subscribe to <em>GET</em> 15% Discount</div>
+        <div class="w-form">
+          <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-popup"><input type="email" class="input w-input" maxlength="256" name="Email-popup" data-name="Email-popup" placeholder="Email adress" id="Email-popup" required="">
+            <div class="border-btn green margin-off"><input type="submit" value="Subscribe" data-wait="Please wait..." class="border-btn-link w-button">
+              <div class="border-animation-wrapper">
+                <div class="b _1"></div>
+                <div class="b _2"></div>
+                <div class="b _3"></div>
+                <div class="b _4"></div>
+              </div>
+            </div>
+          </form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-remodal-action="close" class="close modal _2"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="assets/site/js/index.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script>
     $('.slider-otz').slick({
       arrows:false,
@@ -825,15 +1026,23 @@
     scrollTop = $(window).scrollTop()
     if (scrollTop >= 250) {
     $('.navbar').addClass('show')
+    $('.border-btn.green.top-btn').addClass('show')
     $('.soc-items').addClass('hidden')
-    $('.brand.nav').removeClass('telephone')
+    $('.brand.nav.hidden').addClass('show')
     } else if (scrollTop < 150) {
     $('.navbar').removeClass('show')
+    $('.border-btn.green.top-btn').removeClass('show')
     $('.soc-items').removeClass('hidden')
-    $('.brand.nav').addClass('telephone')
+    $('.brand.nav.hidden').removeClass('show')
     }
     })
     });
 </script>
+  <!--  Modal timer  -->
+  <script>
+    setTimeout(function() { var inst = $('[data-remodal-id=modal]').remodal();
+        inst.open();}, 2000);
+  </script>
+  <!--  Modal timer  -->
 </body>
 </html>
