@@ -3225,6 +3225,10 @@ li {
     align-items: stretch;
   }
 
+  .brand-menu {
+    height: auto;
+  }
+
   .link-top.mail {
     margin-right: 0px;
     margin-left: auto;
