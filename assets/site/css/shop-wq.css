@@ -475,12 +475,26 @@ li {
 
 .border-btn {
   position: relative;
-  font-family: Pt root ui;
   margin-top: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start;
-  border: 1px solid hsla(0, 0.00%, 100.00%, 1.00);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #fff;
+  background-color: transparent;
+  font-family: 'Pt root ui', sans-serif;
+  color: #fff;
   font-size: 11px;
   line-height: 2em;
   font-weight: 400;
@@ -491,7 +505,8 @@ li {
 .border-btn.green {
   display: inline-block;
   padding-left: 1px;
-  border: 1px solid #08422c;
+  border-style: solid;
+  border-color: #08422c;
   background-color: #08422c;
   cursor: pointer;
 }
@@ -520,7 +535,6 @@ li {
 
 .border-btn.green.margin-off {
   margin-top: 0px;
-  font-family: Pt root ui;
 }
 
 .border-btn.black {
@@ -590,10 +604,10 @@ li {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .card {
@@ -615,6 +629,7 @@ li {
 }
 
 .price-card {
+  margin-bottom: auto;
   color: #909090;
   font-size: 15px;
 }
@@ -728,7 +743,6 @@ li {
 }
 
 .sep-content {
-  display: inline-block;
   margin-right: 250px;
   margin-left: 26px;
   font-weight: 300;
@@ -748,11 +762,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 6px;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Pt root ui', sans-serif;
   color: grey;
   font-size: 11px;
   line-height: 1.818em;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.3em;
   text-decoration: none;
   text-transform: uppercase;
@@ -763,11 +777,11 @@ li {
   overflow: hidden;
   margin-top: 23px;
   padding-bottom: 0px;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Pt root ui', sans-serif;
   color: #333;
   font-size: 11px;
   line-height: 2em;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
@@ -993,7 +1007,7 @@ li {
 .footer-link {
   display: block;
   margin-bottom: 10px;
-  font-family: Pt root ui;
+  font-family: 'Pt root ui', sans-serif;
   color: grey;
   font-size: 15px;
   line-height: 1.58em;
@@ -1007,7 +1021,7 @@ li {
 .email {
   margin-top: 14px;
   margin-bottom: 17px;
-  font-family: Pt root ui;
+  font-family: Muli;
   font-size: 14px;
   line-height: 1.58em;
   font-weight: 400;
@@ -1031,7 +1045,7 @@ li {
 .form-input {
   margin-bottom: 0px;
   border: 1px solid #ddd;
-  font-family: Pt root ui;
+  font-family: 'Pt root ui', sans-serif;
   font-size: 15px;
   font-weight: 400;
 }
@@ -1837,7 +1851,7 @@ li {
   display: flex;
   font-size: 11px;
   line-height: 1.818em;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.3em;
 }
 
@@ -1910,12 +1924,11 @@ li {
   background-color: #fafafa;
   font-size: 11px;
   line-height: 1.818em;
-  font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
-.slider-ui {
+.ui-widget-content {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1930,15 +1943,7 @@ li {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #08422c;
-}
-
-.ui-slider-handle {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #08422c;
-  cursor: pointer;
+  background-color: #f3f3f3;
 }
 
 .price-slider-amount {
@@ -2155,7 +2160,7 @@ li {
 }
 
 .footer-text {
-  font-family: Pt root ui;
+  font-family: 'Pt root ui', sans-serif;
   font-size: 14px;
   line-height: 1.58em;
   font-weight: 400;
@@ -2333,7 +2338,7 @@ li {
 }
 
 .card-price {
-  font-family: Pt root ui;
+  font-family: Muli;
   color: #909090;
   font-size: 15px;
   line-height: 1.58em;
@@ -2366,7 +2371,7 @@ li {
 }
 
 .price-dd {
-  font-family: Pt root ui;
+  font-family: Muli;
   font-size: 16px;
   line-height: 1.58em;
   font-weight: 400;
@@ -2551,7 +2556,7 @@ li {
   background-color: #fafafa;
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
-  font-family: Pt root ui;
+  font-family: 'Pt root ui', sans-serif;
   color: #000;
   font-size: 15px;
   font-weight: 400;
@@ -2619,7 +2624,7 @@ li {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: Pt root ui;
+  font-family: Muli;
   font-size: 12px;
   font-weight: 400;
 }
