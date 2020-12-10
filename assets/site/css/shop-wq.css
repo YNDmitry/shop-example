@@ -475,35 +475,23 @@ li {
 
 .border-btn {
   position: relative;
-  display: inline-block;
+  font-family: Pt root ui;
   margin-top: 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
   align-items: flex-start;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #fff;
-  background-color: transparent;
-  color: #fff;
+  border: 1px solid hsla(0, 0.00%, 100.00%, 1.00);
   font-size: 11px;
   line-height: 2em;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .border-btn.green {
-  border-style: none;
+  display: inline-block;
+  padding-left: 1px;
+  border: 1px solid #08422c;
   background-color: #08422c;
   cursor: pointer;
 }
@@ -532,7 +520,7 @@ li {
 
 .border-btn.green.margin-off {
   margin-top: 0px;
-  font-family: Muli;
+  font-family: Pt root ui;
 }
 
 .border-btn.black {
@@ -1005,7 +993,7 @@ li {
 .footer-link {
   display: block;
   margin-bottom: 10px;
-  font-family: Muli;
+  font-family: Pt root ui;
   color: grey;
   font-size: 15px;
   line-height: 1.58em;
@@ -1019,7 +1007,7 @@ li {
 .email {
   margin-top: 14px;
   margin-bottom: 17px;
-  font-family: Muli;
+  font-family: Pt root ui;
   font-size: 14px;
   line-height: 1.58em;
   font-weight: 400;
@@ -1043,7 +1031,7 @@ li {
 .form-input {
   margin-bottom: 0px;
   border: 1px solid #ddd;
-  font-family: Muli;
+  font-family: Pt root ui;
   font-size: 15px;
   font-weight: 400;
 }
@@ -2167,7 +2155,7 @@ li {
 }
 
 .footer-text {
-  font-family: Muli;
+  font-family: Pt root ui;
   font-size: 14px;
   line-height: 1.58em;
   font-weight: 400;
@@ -2345,7 +2333,7 @@ li {
 }
 
 .card-price {
-  font-family: Muli;
+  font-family: Pt root ui;
   color: #909090;
   font-size: 15px;
   line-height: 1.58em;
@@ -2378,7 +2366,7 @@ li {
 }
 
 .price-dd {
-  font-family: Muli;
+  font-family: Pt root ui;
   font-size: 16px;
   line-height: 1.58em;
   font-weight: 400;
@@ -2563,7 +2551,7 @@ li {
   background-color: #fafafa;
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
-  font-family: Muli;
+  font-family: Pt root ui;
   color: #000;
   font-size: 15px;
   font-weight: 400;
@@ -2631,7 +2619,7 @@ li {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: Muli;
+  font-family: Pt root ui;
   font-size: 12px;
   font-weight: 400;
 }
