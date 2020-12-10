@@ -11,6 +11,8 @@
   <link href="assets/site/css/fancy-style.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/site/images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="assets/site/images/webclip.png" rel="apple-touch-icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" rel="stylesheet" type="text/css">
@@ -72,7 +74,7 @@
         <a href="#" class="link-top"><span class="font-icon icon-location-pin"> </span>Find a store</a>
         <a href="#" class="link-top mail"><span class="font-icon icon-envelope"> </span>Newsletter</a>
         <form action="/search" class="search-wrapper w-form"><input type="search" class="search-input w-input" maxlength="256" name="query" placeholder="" id="search" required="">
-          <div class="search-wrapper-btn"><input type="submit" value="" class="hidden w-button">
+          <div class="search-wrapper-btn">
             <a id="search-btn" href="#" class="search-btn lnr-chevron-right w-button"></a>
           </div>
         </form>
@@ -107,7 +109,7 @@
                 <div data-hover="1" data-delay="0" class="dd w-dropdown">
                   <div class="dd-toggle w-dropdown-toggle">
                     <div class="nav-link">
-                      <div>Home</div>
+                      <div>главная</div>
                       <div class="link-botthom"></div>
                     </div>
                   </div>
@@ -160,7 +162,7 @@
                 <div data-hover="1" data-delay="0" class="dd w-dropdown">
                   <div class="dd-toggle w-dropdown-toggle">
                     <div class="nav-link">
-                      <div>pages</div>
+                      <div>страницы</div>
                       <div class="link-botthom"></div>
                     </div>
                   </div>
@@ -381,7 +383,9 @@
                       <div>Pleated Skirt</div>
                       <div class="card-price">1 x $80.00</div>
                     </div>
-                    <div class="close"></div>
+                    <form action="/" name="close">
+                      <div class="close"></div>
+                    </form>
                   </a>
                   <a href="#" class="dd-cart-item w-inline-block">
                     <div class="item-image"><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" sizes="100vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt=""></div>
@@ -389,7 +393,9 @@
                       <div>Pleated Skirt</div>
                       <div class="card-price">1 x $80.00</div>
                     </div>
-                    <div class="close"></div>
+                    <form action="/" name="close">
+                      <div class="close"></div>
+                    </form>
                   </a>
                   <div class="total-block">
                     <div class="text-bl">
@@ -443,12 +449,12 @@
       <div class="w-slider-mask">
         <div class="slide w-slide">
           <div class="slide-head">
-            <div class="slider-label">FASHION DESIGNERS</div>
-            <div class="slide-h">New <span class="uppercase">Brands</span> Incoming</div>
-            <div class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </div>
+            <div class="slider-label">дизайнер одежды</div>
+            <div class="slide-h">Поступление <span class="uppercase">Новых</span> брендов</div>
+            <div class="slider-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице</div>
             <div class="border-btn">
               <a href="#" class="border-btn-link w-inline-block">
-                <div>view more</div>
+                <div>посмотреть</div>
               </a>
               <div class="border-animation-wrapper">
                 <div class="b _1"></div>
@@ -464,7 +470,7 @@
             <div class="slider-label">FASHION DESIGNERS</div>
             <div class="slide-h">Fresh Grament Trends</div>
             <div class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </div>
-            <a href="#" class="border-btn w-button">view more</a>
+            <a href="#" class="border-btn w-button">посмотреть</a>
           </div>
         </div>
         <div class="slide w-slide">
@@ -472,7 +478,7 @@
             <div class="slider-label">FASHION DESIGNERS</div>
             <div class="slide-h">Fresh Grament Trends</div>
             <div class="slider-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique. </div>
-            <a href="#" class="border-btn w-button">view more</a>
+            <a href="#" class="border-btn w-button">посмотреть</a>
           </div>
         </div>
       </div>
@@ -487,8 +493,8 @@
   </section>
   <section class="container s2">
     <div class="heading-wrapper">
-      <div class="heading-label"><strong>SUMMER COLLECTION</strong></div>
-      <h2>The <em>BEST</em> Weekly Products</h2>
+      <div class="heading-label"><strong>летняя коллекция</strong></div>
+      <h2><em>ЛУЧШИЕ</em> еженедельные продукты</h2>
     </div>
     <div class="grid-items">
       <a href="#" class="card w-inline-block">
@@ -501,10 +507,10 @@
         </div>
         <div class="info-product-card">
           <div>
-            <div class="heading-card">Leather Jacket</div>
-            <div class="pre-label">Spring</div>
+            <div class="heading-card">Кожаная Куртка</div>
+            <div class="pre-label">Весна</div>
           </div>
-          <div class="price-card">$230.00</div>
+          <div class="price-card">₽230.00</div>
         </div>
       </a>
       <a href="#" class="card w-inline-block">
@@ -517,10 +523,10 @@
         </div>
         <div class="info-product-card">
           <div>
-            <div class="heading-card">Leather Jacket</div>
-            <div class="pre-label">Spring</div>
+            <div class="heading-card">Кожаная куртка</div>
+            <div class="pre-label">Весна</div>
           </div>
-          <div class="price-card">$230.00</div>
+          <div class="price-card">₽230.00</div>
         </div>
       </a>
       <a href="#" class="card w-inline-block">
@@ -533,10 +539,10 @@
         </div>
         <div class="info-product-card">
           <div>
-            <div class="heading-card">Leather Jacket</div>
-            <div class="pre-label">Spring</div>
+            <div class="heading-card">Кожаная куртка</div>
+            <div class="pre-label">Весна</div>
           </div>
-          <div class="price-card">$230.00</div>
+          <div class="price-card">₽230.00</div>
         </div>
       </a>
       <a href="#" class="card w-inline-block">
@@ -549,10 +555,10 @@
         </div>
         <div class="info-product-card">
           <div>
-            <div class="heading-card">Leather Jacket</div>
-            <div class="pre-label">Spring</div>
+            <div class="heading-card">Кожаная куртка</div>
+            <div class="pre-label">Весна</div>
           </div>
-          <div class="price-card">$230.00</div>
+          <div class="price-card">₽230.00</div>
         </div>
       </a>
       <a href="#" class="card w-inline-block">
@@ -565,10 +571,10 @@
         </div>
         <div class="info-product-card">
           <div>
-            <div class="heading-card">Leather Jacket</div>
-            <div class="pre-label">Spring</div>
+            <div class="heading-card">Кожаная куртка</div>
+            <div class="pre-label">Весна</div>
           </div>
-          <div class="price-card">$230.00</div>
+          <div class="price-card">₽230.00</div>
         </div>
       </a>
     </div>
@@ -589,29 +595,29 @@
     </div>
     <div class="icons-cards-wrapper">
       <div class="icon-card"><img src="assets/site/images/h10-icon-img-1.png" loading="lazy" alt="" class="icon">
-        <h4>24 Service</h4>
-        <p class="icon-p">Anetus et malea fames ac, turpisiny egestas sed tempus.</p>
+        <h4>24 / 7</h4>
+        <p class="icon-p">Дак и дурная слава, но время правоохранительной турписины</p>
       </div>
       <div class="icon-card"><img src="assets/site/images/h10-icon-img-2.png" loading="lazy" alt="" class="icon">
-        <h4>Free Returns</h4>
-        <p class="icon-p">Anetus et malea fames ac, turpisiny egestas sed tempus.</p>
+        <h4>Бесплатные возвраты</h4>
+        <p class="icon-p">Дак и дурная слава, но время правоохранительной турписины</p>
       </div>
       <div class="icon-card"><img src="assets/site/images/h10-icon-img-3.png" loading="lazy" alt="" class="icon">
-        <h4>Order Tracking</h4>
-        <p class="icon-p">Anetus et malea fames ac, turpisiny egestas sed tempus.</p>
+        <h4>Отслеживание заказов</h4>
+        <p class="icon-p">Дак и дурная слава, но время правоохранительной турписины</p>
       </div>
       <div class="icon-card"><img src="assets/site/images/h10-icon-img-4.png" loading="lazy" alt="" class="icon">
-        <h4>Fast Delivery</h4>
-        <p class="icon-p">Anetus et malea fames ac, turpisiny egestas sed tempus.</p>
+        <h4>Быстрая доставка</h4>
+        <p class="icon-p">Дак и дурная слава, но время правоохранительной турписины</p>
       </div>
     </div>
     <div class="separator-card">
       <div class="sep-content">
-        <h2>Top <em>DESIGNERS</em> Picks</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamco <br>rpeleo, eget euism od orci suid.</p>
+        <h2>Лучшие <em>ДИЗАЙНЕРЫ</em> выбирают</h2>
+        <p>Морковь Lorem ipsum, улучшенная культурой. <br>Школьному округу может потребоваться клинический экзамен.</p>
         <div class="border-btn green">
           <a href="#" class="border-btn-link w-inline-block">
-            <div>view more</div>
+            <div>посмотреть</div>
           </a>
           <div class="border-animation-wrapper">
             <div class="b _1"></div>
@@ -625,8 +631,8 @@
   </section>
   <section class="container s3">
     <div class="heading-wrapper">
-      <div class="heading-label"><strong>BLOG STORIES</strong></div>
-      <h2>Fresh <em>NEWS</em> From Our Blog</h2>
+      <div class="heading-label"><strong>БЛОГ ИСТОРИИ</strong></div>
+      <h2>Свежие <em>НОВОСТИ</em> из нашего блога</h2>
     </div>
     <div class="blog-grid">
       <div class="blog-card">
@@ -635,11 +641,11 @@
           <a href="#" class="date-brand w-inline-block">
             <div>may 2, 2020</div>
             <div class="margin">/</div>
-            <div>Fashion</div>
+            <div>Мода</div>
           </a>
-          <h4>You Need To Buy Only One Thing This Spring</h4>
+          <h4>Этой Веснаой вам нужно купить только одну вещь</h4>
           <a href="#" class="more-btn w-inline-block">
-            <div>read more</div>
+            <div>читать</div>
             <div class="line-more-btn"></div>
           </a>
         </div>
@@ -650,11 +656,11 @@
           <a href="#" class="date-brand w-inline-block">
             <div>may 2, 2020</div>
             <div class="margin">/</div>
-            <div>Fashion</div>
+            <div>Мода</div>
           </a>
-          <h4 class="blog-heading">You Need To Buy Only One Thing This Spring</h4>
+          <h4>Этой Веснаой вам нужно купить только одну вещь</h4>
           <a href="#" class="more-btn w-inline-block">
-            <div>read more</div>
+            <div>читать</div>
             <div class="line-more-btn"></div>
           </a>
         </div>
@@ -665,11 +671,11 @@
           <a href="#" class="date-brand w-inline-block">
             <div>may 2, 2020</div>
             <div class="margin">/</div>
-            <div>Fashion</div>
+            <div>Мода</div>
           </a>
-          <h4>You Need To Buy Only One Thing This Spring</h4>
+          <h4>Этой Веснаой вам нужно купить только одну вещь</h4>
           <a href="#" class="more-btn w-inline-block">
-            <div>read more</div>
+            <div>читать</div>
             <div class="line-more-btn"></div>
           </a>
         </div>
@@ -689,15 +695,15 @@
   </section>
   <section class="container s4">
     <div class="heading-wrapper">
-      <div class="heading-label"><strong>FASHION DESIGNERS</strong></div>
-      <h2>Our <em>DESGNERS</em> Dream Team</h2>
+      <div class="heading-label"><strong>МОДЕЛЬЕРЫ</strong></div>
+      <h2>Наши <em>ДИЗАЙНЕРЫ</em></h2>
     </div>
     <div class="grid-models">
       <div class="card-model">
         <div class="model-img-wrapper">
           <div class="model-hover-block">
             <div>
-              <div class="heading-label model-label margin-off">social networks</div>
+              <div class="heading-label model-label margin-off">социальные сети</div>
               <div class="soc-model">
                 <a href="#" class="nav-link w-inline-block">
                   <div>fb</div>
@@ -715,14 +721,14 @@
             </div>
           </div><img src="assets/site/images/baba.png" loading="lazy" alt="">
         </div>
-        <div class="heading-label model-label">MODEL</div>
+        <div class="heading-label model-label">МОДЕЛЬ</div>
         <h4>Lisa Cooper</h4>
       </div>
       <div class="card-model">
         <div class="model-img-wrapper">
           <div class="model-hover-block">
             <div>
-              <div class="heading-label model-label margin-off">social networks</div>
+              <div class="heading-label model-label margin-off">социальные сети</div>
               <div class="soc-model">
                 <a href="#" class="nav-link w-inline-block">
                   <div>fb</div>
@@ -740,14 +746,14 @@
             </div>
           </div><img src="assets/site/images/baba.png" loading="lazy" alt="">
         </div>
-        <div class="heading-label model-label">MODEL</div>
+        <div class="heading-label model-label">МОДЕЛЬ</div>
         <h4>Lisa Cooper</h4>
       </div>
       <div class="card-model">
         <div class="model-img-wrapper">
           <div class="model-hover-block">
             <div>
-              <div class="heading-label model-label margin-off">social networks</div>
+              <div class="heading-label model-label margin-off">социальные сети</div>
               <div class="soc-model">
                 <a href="#" class="nav-link w-inline-block">
                   <div>fb</div>
@@ -765,14 +771,14 @@
             </div>
           </div><img src="assets/site/images/baba.png" loading="lazy" alt="">
         </div>
-        <div class="heading-label model-label">MODEL</div>
+        <div class="heading-label model-label">МОДЕЛЬ</div>
         <h4>Lisa Cooper</h4>
       </div>
       <div class="card-model">
         <div class="model-img-wrapper">
           <div class="model-hover-block">
             <div>
-              <div class="heading-label model-label margin-off">social networks</div>
+              <div class="heading-label model-label margin-off">социальные сети</div>
               <div class="soc-model">
                 <a href="#" class="nav-link w-inline-block">
                   <div>fb</div>
@@ -790,14 +796,14 @@
             </div>
           </div><img src="assets/site/images/baba.png" loading="lazy" alt="">
         </div>
-        <div class="heading-label model-label">MODEL</div>
+        <div class="heading-label model-label">МОДЕЛЬ</div>
         <h4>Lisa Cooper</h4>
       </div>
     </div>
     <div class="otz-block">
       <div class="heading-wrapper">
-        <div class="heading-label"><strong>What They Say</strong></div>
-        <h2>Kind <em>WORDS</em> From Others</h2>
+        <div class="heading-label"><strong>Что они говорят</strong></div>
+        <h2>Добрые <em>СЛОВА</em> от других</h2>
       </div>
     </div>
     <div class="slider-otz-wrapper">
@@ -846,7 +852,7 @@
         <div class="footer-text">+456 741 852 33</div>
       </div>
       <div class="footer-link-block">
-        <h4>Help &amp; Information</h4>
+        <h4>Помощь &amp; Информация</h4>
         <ul role="list" class="list-links-footer w-list-unstyled">
           <li>
             <a href="#" class="footer-link">Text Link</a>
@@ -863,7 +869,7 @@
         </ul>
       </div>
       <div class="footer-link-block">
-        <h4>About Makao</h4>
+        <h4>О Makao</h4>
         <ul role="list" class="list-links-footer w-list-unstyled">
           <li>
             <a href="#" class="footer-link">Text Link</a>
@@ -880,8 +886,8 @@
         </ul>
       </div>
       <div class="footer-link-block">
-        <h4>Join Our Newslleter</h4>
-        <div class="footer-text margin-top">Want exclusive offers and first access to <br>products? Sign up for email alerts</div>
+        <h4>Подпишитесь на рассылку</h4>
+        <div class="footer-text margin-top">Хотите эксклюзивные предложения и первый доступ к продуктам? Подпишитесь на рассылку уведомлений по электронной почте</div>
         <div class="w-form">
           <form id="email-form" name="email-form" data-name="Email Form" class="footer-form"><input type="email" class="form-input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email adress" id="email-2" required=""><input type="submit" value="" data-wait="Please wait..." class="sumbit-btn w-button"></form>
           <div class="w-form-done">
@@ -974,11 +980,13 @@
     <div class="remodal-margin">
       <div><img src="assets/site/images/pop-up-img.jpg" loading="lazy" alt=""></div>
       <div class="info-wrapper">
-        <div>Subscribe to <em>GET</em> 15% Discount</div>
-        <div class="w-form">
-          <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="form-popup">
-            <div class="input-wrapper"><input type="email" class="input w-input" maxlength="256" name="Email-popup" data-name="Email-popup" placeholder="Email adress" id="Email-popup" required="">
-              <div class="border-btn green margin-off"><input type="submit" value="Subscribe" data-wait="Please wait..." class="border-btn-link w-button">
+        <div>Подпишись и <em>ПОЛУЧИ</em> 15% Скидку</div>
+        <div>
+          <form name="popup-form" class="form-popup">
+            <div class="input-wrapper">
+              <input type="email" class="input w-input" maxlength="256" name="Email-popup" placeholder="Email adress" required="">
+              <div class="border-btn green margin-off">
+                <input type="submit" value="Подписаться" class="border-btn-link w-button">
                 <div class="border-animation-wrapper">
                   <div class="b _1"></div>
                   <div class="b _2"></div>
@@ -986,8 +994,10 @@
                   <div class="b _4"></div>
                 </div>
               </div>
-            </div><label class="w-checkbox ckeck-wrapper">
-              <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" style="opacity:0;position:absolute;z-index:-1"><span class="check-label w-form-label">Prevent This Pop-up</span>
+            </div>
+            <label class="ckeck-wrapper">
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <label for="checkbox" class="check-label">Приостановить</label>
             </label>
           </form>
           <div class="w-form-done">
@@ -1057,7 +1067,7 @@
   <!--  Modal timer  -->
   <script>
     setTimeout(function() { var inst = $('[data-remodal-id=modal]').remodal();
-        inst.open();}, 2000);
+        inst.open();}, 0);
   </script>
   <!--  Modal timer  -->
 </body>
