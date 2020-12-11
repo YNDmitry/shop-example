@@ -252,6 +252,7 @@ label {
   vertical-align: middle;
   background-color: #ffffff;
   border: 1px solid #cccccc;
+  outline: none;
 }
 
 .w-slider {
@@ -648,4 +649,17 @@ label {
   background-color: #08422c;
   cursor: pointer;
   outline: none;
+}
+
+.number-input {
+  pointer-events: none;
+}
+
+.count-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

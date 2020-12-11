@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Корзина</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="assets/site/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="assets/site/css/components.css" rel="stylesheet" type="text/css">
+  <link href="assets/site/css/shop-wq.css" rel="stylesheet" type="text/css">
+  <link href="assets/site/css/icons.css" rel="stylesheet" type="text/css">
+  <link href="assets/site/css/fancy-style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/site/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="assets/site/images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <header id="header">
+    <div class="info-block-top">
+      <div class="links-wrapper">
+        <a href="#" class="link-top"><span class="font-icon icon-location-pin"> </span>Найти магазин</a>
+        <a href="#" class="link-top mail"><span class="font-icon icon-envelope"> </span>Рассылка</a>
+        <form action="/search" class="search-wrapper w-form"><input type="search" class="search-input w-input" maxlength="256" name="query" placeholder="" id="search" required="">
+          <div class="search-wrapper-btn"><input type="submit" value="" class="hidden w-button">
+            <a id="search-btn" href="#" class="search-btn lnr-chevron-right w-button"></a>
+          </div>
+        </form>
+      </div>
+      <div class="links-wrapper">
+        <a href="#" class="link-top telephone"><span class="font-icon icon-phone"> </span>+33 (0) 559 6631</a>
+        <a href="#" class="link-top profil"><span class="font-icon icon-user"> </span>Мой профиль</a>
+      </div>
+    </div>
+    <div class="header">
+      <a href="#" class="brand w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt=""></a>
+      <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar w-nav">
+        <div class="nav-container">
+          <a href="#" class="brand nav telephone w-inline-block"><img src="assets/site/images/makao-logo-new.png" loading="lazy" alt="" class="brand-menu"></a>
+          <div class="soc-items">
+            <a href="#" class="nav-link soc w-inline-block">
+              <div>fb</div>
+              <div class="link-botthom"></div>
+            </a>
+            <a href="#" class="nav-link soc w-inline-block">
+              <div>tw</div>
+              <div class="link-botthom"></div>
+            </a>
+            <a href="#" class="nav-link soc w-inline-block">
+              <div>pi</div>
+              <div class="link-botthom"></div>
+            </a>
+          </div>
+          <nav role="navigation" class="nav-menu w-nav-menu">
+            <ul role="list" class="list">
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>главная</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>страницы</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>магазин</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>лукбук</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="w-dropdown-link">Link 1</a>
+                              <a href="#" class="w-dropdown-link">Link 2</a>
+                              <a href="#" class="w-dropdown-link">Link 3</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+              <li>
+                <div data-hover="1" data-delay="0" class="dd w-dropdown">
+                  <div class="dd-toggle w-dropdown-toggle">
+                    <div class="nav-link">
+                      <div>блог</div>
+                      <div class="link-botthom"></div>
+                    </div>
+                  </div>
+                  <nav class="dd-list-border abs-setting dop-menu-side w-dropdown-list">
+                    <ul role="list" class="sub-menu w-list-unstyled">
+                      <li class="dd-link-margin">
+                        <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                      <li class="dd-link-margin chevron">
+                        <div data-hover="1" data-delay="0" class="dd-double w-dropdown">
+                          <div class="dd-toggle-double w-dropdown-toggle">
+                            <a href="#" class="dd-link w-dropdown-link">Link 1</a>
+                          </div>
+                          <nav class="dd-list-double w-dropdown-list">
+                            <div class="dd-list-double-wrapper">
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                              <a href="#" class="dd-link_2 w-dropdown-link">Link 1</a>
+                            </div>
+                          </nav>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-button w-nav-button">
+            <a href="#" class="nav-link inr-menu w-inline-block">
+              <div class="burger _1"></div>
+              <div class="burger _2"></div>
+              <div class="burger _3"></div>
+            </a>
+          </div>
+          <div class="products-items">
+            <div data-hover="1" data-delay="0" class="dd w-dropdown">
+              <div class="dd-toggle w-dropdown-toggle">
+                <a href="#" class="nav-link cart w-inline-block">
+                  <div><span class="font-icon icon-handbag"> </span>корзина (0)</div>
+                  <div class="link-botthom"></div>
+                </a>
+              </div>
+              <nav class="dd-list-border w-dropdown-list">
+                <div class="dd-content">
+                  <a href="#" class="dd-cart-item w-inline-block">
+                    <div class="item-image"><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" sizes="100vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt=""></div>
+                    <div class="e-content">
+                      <div>Юбка</div>
+                      <div class="card-price">1 x $80.00</div>
+                    </div>
+                    <div class="close"></div>
+                  </a>
+                  <a href="#" class="dd-cart-item w-inline-block">
+                    <div class="item-image"><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" sizes="100vw" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" alt=""></div>
+                    <div class="e-content">
+                      <div>Юбка</div>
+                      <div class="card-price">1 x $80.00</div>
+                    </div>
+                    <div class="close"></div>
+                  </a>
+                  <div class="total-block">
+                    <div class="text-bl">
+                      <div>Всего:</div>
+                      <div class="price-dd">$160.00</div>
+                    </div>
+                    <div class="dd-btns-block">
+                      <div class="border-btn green">
+                        <a href="#" class="border-btn-link w-inline-block">
+                          <div>оплатить</div>
+                        </a>
+                        <div class="border-animation-wrapper">
+                          <div class="b _1"></div>
+                          <div class="b _2"></div>
+                          <div class="b _3"></div>
+                          <div class="b _4"></div>
+                        </div>
+                      </div>
+                      <div class="border-btn black">
+                        <a href="#" class="border-btn-link black w-inline-block">
+                          <div>корзина</div>
+                        </a>
+                        <div class="border-animation-wrapper dd-border">
+                          <div class="b _1 black"></div>
+                          <div class="b _2 black"></div>
+                          <div class="b _3 black"></div>
+                          <div class="b _4 black"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <a href="#" class="nav-link wish w-inline-block">
+              <div><span class="font-icon icon-heart"> </span>желания</div>
+              <div class="link-botthom"></div>
+            </a>
+            <a data-remodal-target="sidemodal" href="#" class="nav-link inr-menu telephone-hidden w-inline-block">
+              <div class="burger"></div>
+              <div class="burger"></div>
+              <div class="burger _3"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="promo-sep">
+      <h1>Корзина</h1>
+    </div>
+    <div class="cart-form w-form">
+      <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="table">
+        <div class="title-block">
+          <div class="product-remove"> </div>
+          <div class="product-image"></div>
+          <div class="product-title">предмет</div>
+          <div class="product-price">цена</div>
+          <div class="product-quantity">количество</div>
+          <div class="product-subtotal">итог</div>
+        </div>
+        <div>
+          <div class="cart-item">
+            <div class="product-remove">
+              <a href="#" class="product-remove-btn w-inline-block"></a>
+            </div>
+            <div class="product-image"><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 16vw, 128px" alt=""></div>
+            <div class="product-title">
+              <a href="#" class="product-title-link">Кожаная куртка</a>
+            </div>
+            <div class="product-price">
+              <div class="amount">₽80.00</div>
+            </div>
+            <div class="product-quantity">
+              <div class="number-input-wrapper">
+                <div class="number-input-box"><input type="text" maxlength="256" name="qty" data-name="qty" class="number-input w-input">
+                  <div class="border-left">
+                    <div class="count-button minus">
+                      <div>-</div>
+                    </div>
+                    <div class="count-button plus">
+                      <div>+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-subtotal">
+              <div class="amount">₽80.00</div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="product-remove">
+              <a href="#" class="product-remove-btn w-inline-block"></a>
+            </div>
+            <div class="product-image"><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 16vw, 128px" alt=""></div>
+            <div class="product-title">
+              <a href="#" class="product-title-link">Кожаная куртка</a>
+            </div>
+            <div class="product-price">
+              <div class="amount">₽80.00</div>
+            </div>
+            <div class="product-quantity">
+              <div class="number-input-wrapper">
+                <div class="number-input-box"><input type="text" maxlength="256" name="qty" data-name="qty" class="number-input w-input">
+                  <div class="border-left">
+                    <div class="count-button minus">
+                      <div>-</div>
+                    </div>
+                    <div class="count-button plus">
+                      <div>+</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-subtotal">
+              <div class="amount">₽80.00</div>
+            </div>
+          </div>
+        </div>
+        <div class="actions"><input type="text" class="input cupon w-input" maxlength="256" name="coupon" placeholder="Купон" required="">
+          <a href="#" class="btn-green w-button">принять купон</a>
+          <a href="#" class="btn-green w-button">обновить корзину</a>
+        </div>
+      </form>
+      <div class="cart-total">
+        <div class="cart-heading">Cart totals</div>
+        <div class="tabel-total">
+          <div class="content-wrapper">
+            <div class="total-title">промежуточный итог</div>
+            <div class="total-text">₽170.00</div>
+          </div>
+          <div class="content-wrapper">
+            <div class="total-title">доставка</div>
+            <div class="total-text">Введите свой адрес, чтобы просмотреть варианты доставки.<br>‍<a href="https://makao.qodeinteractive.com/cart/#">Рассчитать стоимость доставки</a>
+            </div>
+          </div>
+          <div class="content-wrapper">
+            <div class="total-title">итог</div>
+            <div class="total-text">₽170.00</div>
+          </div>
+        </div>
+        <a href="#" class="btn-green total w-button">пройти к оплате</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-flex-container">
+      <div class="footer-link-block">
+        <a href="#" class="footer-logo-link w-inline-block"><img src="assets/site/images/makao-logo-new.png" width="88" alt="" class="footer-image"></a>
+        <div class="footer-text">798 SW 2nd Ave, Miami, FL 33130<br>1498 Bryant St, San Francisco, CA</div>
+        <div class="email">makao@qodeinteractive.com</div>
+        <div class="footer-text">+456 741 852 33</div>
+      </div>
+      <div class="footer-link-block">
+        <h4>Помощь &amp; Информация</h4>
+        <ul role="list" class="list-links-footer w-list-unstyled">
+          <li>
+            <a href="#" class="footer-link">Text Link</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Text Link</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Text Link</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Text Link</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-link-block">
+        <h4>О Makao</h4>
+        <ul role="list" class="list-links-footer w-list-unstyled">
+          <li>
+            <a href="#" class="footer-link">Text Link</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Text Link</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Text Link</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Text Link</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-link-block">
+        <h4>Подпишитесь На Рассылку</h4>
+        <div class="footer-text margin-top">Хотите эксклюзивные предложения и первый доступ к продуктам? Подпишитесь на рассылку уведомлений по электронной почте</div>
+        <div class="w-form">
+          <form id="email-form" name="email-form" data-name="Email Form" class="footer-form"><input type="email" class="form-input w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email adress" id="email-2" required=""><input type="submit" value="" data-wait="Please wait..." class="sumbit-btn w-button"></form>
+          <div class="w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-other-info">
+      <div class="footer-flex-container new-setting">
+        <div class="copyright">Qodeinteractive 2020</div>
+        <a href="#" class="w-inline-block"><img src="assets/site/images/footer-bottom-img.png" loading="lazy" width="179" alt=""></a>
+        <div class="soc-footer">
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>fb</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>tw</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>pi</div>
+            <div class="link-botthom"></div>
+          </a>
+          <a href="#" class="nav-link soc w-inline-block">
+            <div>in</div>
+            <div class="link-botthom"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="border-btn green top-btn">
+    <a href="#header" class="border-btn-link w-inline-block"></a>
+    <div class="border-animation-wrapper">
+      <div class="b _1"></div>
+      <div class="b _2"></div>
+      <div class="b _3"></div>
+      <div class="b _4"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="assets/site/js/index.js" type="text/javascript"></script>
+  <script>
+  $(document).ready(() => {
+  let scrollTop = 0
+  $(window).scroll(() => {
+  scrollTop = $(window).scrollTop()
+  if (scrollTop >= 250) {
+  $('.navbar').addClass('show')
+  $('.border-btn.green.top-btn').addClass('show')
+  $('.soc-items').addClass('hidden')
+  $('.brand.nav.telephone').removeClass('telephone')
+  } else if (scrollTop < 150) {
+  $('.navbar').removeClass('show')
+  $('.border-btn.green.top-btn').removeClass('show')
+  $('.soc-items').removeClass('hidden')
+  $('.brand.nav').addClass('telephone')
+  }
+  })
+  });
+  </script>
+  <!--  number input  -->
+  <script>
+  let plusButton = document.querySelectorAll(".plus")
+  let minusButton = document.querySelectorAll(".minus")
+  document.querySelectorAll(".number-input").forEach(element => {
+      element.value = 1
+  })
+  plusButton.forEach(element => {
+      element.onclick = function () {
+          let box = this.closest('.number-input-box')
+          let input = box.querySelector(".number-input")
+          input.value++
+      }
+  })
+  minusButton.forEach(element => {
+      element.onclick = function () {
+          let box = this.closest('.number-input-box')
+          let input = box.querySelector(".number-input")
+          if (input.value > 1) {
+              input.value--
+          }
+      }
+  });
+  </script>
+  <!--  /number input  -->
+</body>
+</html>
