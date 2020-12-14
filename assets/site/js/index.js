@@ -103,7 +103,7 @@ Webflow.require('ix2').init({
           autoStopEventId: 'e-4',
         },
       },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      mediaQueries: ['main'],
       target: {
         selector: '.nav-link',
         originalId: '951f293c-5d63-b29a-f5aa-d03abe511789',
@@ -145,7 +145,7 @@ Webflow.require('ix2').init({
           autoStopEventId: 'e-3',
         },
       },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      mediaQueries: ['main'],
       target: {
         selector: '.nav-link',
         originalId: '951f293c-5d63-b29a-f5aa-d03abe511789',
@@ -187,7 +187,7 @@ Webflow.require('ix2').init({
           autoStopEventId: 'e-6',
         },
       },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      mediaQueries: ['main'],
       target: {
         selector: '.more-btn',
         originalId:
@@ -213,94 +213,6 @@ Webflow.require('ix2').init({
       },
       createdOn: 1607436008382,
     },
-    'e-7': {
-      id: 'e-7',
-      name: 'Unnamed interaction',
-      animationType: 'custom',
-      eventTypeId: 'SLIDER_ACTIVE',
-      action: {
-        id: '',
-        actionTypeId: 'GENERAL_START_ACTION',
-        config: {
-          delay: 0,
-          easing: '',
-          duration: 0,
-          actionListId: 'a-6',
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: 'e-8',
-        },
-      },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
-      target: {
-        selector: '.slide',
-        originalId:
-          '5fcbd3b5f2045926c30bfb74|b6b3c251-7d22-91db-86f7-2d4d823a36f8',
-        appliesTo: 'CLASS',
-      },
-      targets: [
-        {
-          selector: '.slide',
-          originalId:
-            '5fcbd3b5f2045926c30bfb74|b6b3c251-7d22-91db-86f7-2d4d823a36f8',
-          appliesTo: 'CLASS',
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: null,
-        scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1607450813624,
-    },
-    'e-8': {
-      id: 'e-8',
-      name: 'Unnamed interaction',
-      animationType: 'custom',
-      eventTypeId: 'SLIDER_INACTIVE',
-      action: {
-        id: '',
-        actionTypeId: 'GENERAL_START_ACTION',
-        config: {
-          delay: 0,
-          easing: '',
-          duration: 0,
-          actionListId: 'a-7',
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: 'e-7',
-        },
-      },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
-      target: {
-        selector: '.slide',
-        originalId:
-          '5fcbd3b5f2045926c30bfb74|b6b3c251-7d22-91db-86f7-2d4d823a36f8',
-        appliesTo: 'CLASS',
-      },
-      targets: [
-        {
-          selector: '.slide',
-          originalId:
-            '5fcbd3b5f2045926c30bfb74|b6b3c251-7d22-91db-86f7-2d4d823a36f8',
-          appliesTo: 'CLASS',
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: null,
-        scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1607450813625,
-    },
     'e-9': {
       id: 'e-9',
       name: 'Unnamed interaction',
@@ -319,7 +231,7 @@ Webflow.require('ix2').init({
           autoStopEventId: 'e-10',
         },
       },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      mediaQueries: ['main'],
       target: {
         selector: '.page-number',
         originalId:
@@ -363,7 +275,7 @@ Webflow.require('ix2').init({
           autoStopEventId: 'e-9',
         },
       },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      mediaQueries: ['main'],
       target: {
         selector: '.page-number',
         originalId:
@@ -491,7 +403,7 @@ Webflow.require('ix2').init({
           autoStopEventId: 'e-14',
         },
       },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      mediaQueries: ['main'],
       target: {
         selector: '.border-btn',
         originalId:
@@ -535,7 +447,7 @@ Webflow.require('ix2').init({
           autoStopEventId: 'e-13',
         },
       },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      mediaQueries: ['main'],
       target: {
         selector: '.border-btn',
         originalId:
@@ -579,7 +491,7 @@ Webflow.require('ix2').init({
           autoStopEventId: 'e-16',
         },
       },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      mediaQueries: ['main'],
       target: {
         selector: '.product-hover-wrapper',
         originalId:
@@ -623,7 +535,7 @@ Webflow.require('ix2').init({
           autoStopEventId: 'e-15',
         },
       },
-      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      mediaQueries: ['main'],
       target: {
         selector: '.product-hover-wrapper',
         originalId:
@@ -1037,82 +949,6 @@ Webflow.require('ix2').init({
       ],
       useFirstGroupAsInitialState: true,
       createdOn: 1607436011533,
-    },
-    'a-6': {
-      id: 'a-6',
-      title: 'slider-change',
-      actionItemGroups: [
-        {
-          actionItems: [
-            {
-              id: 'a-6-n-2',
-              actionTypeId: 'STYLE_OPACITY',
-              config: {
-                delay: 0,
-                easing: 'ease',
-                duration: 500,
-                target: {
-                  useEventTarget: 'CHILDREN',
-                  selector: '.dot-line',
-                  selectorGuids: ['53a5e4ba-c95f-36a3-f28a-acf268f65629'],
-                },
-                value: 0,
-                unit: '',
-              },
-            },
-          ],
-        },
-        {
-          actionItems: [
-            {
-              id: 'a-6-n-3',
-              actionTypeId: 'STYLE_OPACITY',
-              config: {
-                delay: 0,
-                easing: 'ease',
-                duration: 500,
-                target: {
-                  useEventTarget: 'CHILDREN',
-                  selector: '.dot-line',
-                  selectorGuids: ['53a5e4ba-c95f-36a3-f28a-acf268f65629'],
-                },
-                value: 1,
-                unit: '',
-              },
-            },
-          ],
-        },
-      ],
-      useFirstGroupAsInitialState: true,
-      createdOn: 1607450816250,
-    },
-    'a-7': {
-      id: 'a-7',
-      title: 'slider-change-out',
-      actionItemGroups: [
-        {
-          actionItems: [
-            {
-              id: 'a-7-n',
-              actionTypeId: 'STYLE_OPACITY',
-              config: {
-                delay: 0,
-                easing: 'ease',
-                duration: 500,
-                target: {
-                  useEventTarget: 'CHILDREN',
-                  selector: '.dot-line',
-                  selectorGuids: ['53a5e4ba-c95f-36a3-f28a-acf268f65629'],
-                },
-                value: 0,
-                unit: '',
-              },
-            },
-          ],
-        },
-      ],
-      useFirstGroupAsInitialState: false,
-      createdOn: 1607450816250,
     },
     'a-8': {
       id: 'a-8',
