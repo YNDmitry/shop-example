@@ -302,7 +302,7 @@ label {
   background-color: #ffffff;
   border: 1px solid #cccccc;
   outline: none;
-  box-shadow: none;
+  box-shadow: inset 0 0 0 0 transparent;
 }
 .w-input:-moz-placeholder,
 .w-select:-moz-placeholder {
@@ -338,24 +338,6 @@ fieldset[disabled] .w-select {
 textarea.w-input,
 textarea.w-select {
   height: auto;
-}
-@media screen and (max-width: 768px) {
-  .w-input,
-  .w-select {
-    display: block;
-    width: 100%;
-    height: 38px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #333333;
-    vertical-align: middle;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    outline: none;
-    box-shadow: none;
-  }
 }
 .w-slider {
   position: relative;
