@@ -402,10 +402,14 @@
     <div class="container-width">
       <div class="left-side-setting">
         <div class="widget-pice-filter">
-          <div class="widget-title">ценовой фильтер</div>
           <div id="slider-range" class="ui-widget-content"></div>
           <div class="price-slider-amount">
-            <div id="amount">Цена: <span class="from">₽42</span> — <span class="to">₽150</span></div>
+            <div class="form-amount-wrapper w-form">
+              <form name="email-form-2" class="form-amount">
+                <div>Цена:</div>
+                <input type="text" class="inp-amount w-input" maxlength="256" name="email-3" placeholder="" id="amount" readonly>
+              </form>
+            </div>
             <a href="#" class="more-btn margin-off w-inline-block">
               <div>filter</div>
               <div class="line-more-btn"></div>
@@ -860,13 +864,19 @@
     });
 </script>
   <script>
+    $( function() {
     $( "#slider-range" ).slider({
-        range: true,
-        min: 42,
-        max: 152,
-        values: [ 42, 152 ],
-        animate: 800,
-      });
+      range: true,
+      min: 42,
+      max: 152,
+      values: [ 42, 152 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "₽" + ui.values[ 0 ] + " - ₽" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "₽" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - ₽" + $( "#slider-range" ).slider( "values", 1 ) );
+  });
     </script>
 </body>
 </html>

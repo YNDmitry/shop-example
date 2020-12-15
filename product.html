@@ -453,7 +453,8 @@
                 </div>
                 <div class="btns-wrapper">
                   <a href="#" class="grey-btn w-button">оформление заказа</a>
-                  <a href="#" class="wish-btn"><span class="font-icon icon-heart"> </span>в список желаний</a>
+                  <div class="dostavka-im">новосибирск - доставим от 3 дней от 270 ₽</div>
+                  <button type="submit" class="wish-btn"><span id="wishIcon" class="font-icon icon-heart wish"> </span>в список желаний</button>
                 </div>
               </div>
               <div>
@@ -881,6 +882,13 @@
         thumbs: false
       },
     });
+  </script>
+  <script>
+    let icon = document.querySelector('#wishIcon')
+    icon.onclick = () => {
+      icon.style.color = 'red'
+      console.log('click')
+    };
   </script>
 </body>
 </html>

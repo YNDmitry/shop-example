@@ -374,6 +374,7 @@ label {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: 'Pt root ui', sans-serif;
   color: #000;
   font-size: 11px;
   font-weight: 400;
@@ -710,6 +711,8 @@ label {
 
 .heading-label.model-label.margin-off {
   margin-top: 0px;
+  font-family: 'Pt root ui', sans-serif;
+  font-weight: 400;
 }
 
 .grid-items {
@@ -1321,6 +1324,7 @@ label {
   transition: all 250ms ease;
   font-family: 'Simple line icons', sans-serif;
   font-size: 13px;
+  font-weight: 400;
 }
 
 .font-icon.icon-handbag {
@@ -1359,6 +1363,19 @@ label {
 
 .font-icon.icon-heart.product-setting:hover {
   color: #08422c;
+}
+
+.font-icon.icon-heart.wish {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.font-icon.icon-heart.wish:hover {
+  color: red;
 }
 
 .font-icon.icon-repl.product-setting {
@@ -3143,12 +3160,13 @@ label {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #1c412e;
+  color: #c4c4c4;
   font-size: 10px;
   line-height: 13px;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+  background: #fff;
 }
 
 .btns-wrapper {
@@ -3652,6 +3670,59 @@ label {
   padding-top: 30px;
 }
 
+.design-link {
+  display: inline-block;
+  margin-top: 25px;
+  -webkit-transition: color 250ms ease;
+  transition: color 250ms ease;
+  font-family: 'Pt root ui', sans-serif;
+  color: grey;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.design-link:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.dostavka-im {
+  margin-top: 15px;
+  padding-left: 29px;
+  background-image: url('../images/dostavka-im.svg');
+  background-position: 0% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #08422c;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.inp-amount {
+  margin-bottom: 0px;
+  padding-left: 5px;
+  border: 1px none #000;
+}
+
+.form-amount {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-amount-wrapper {
+  margin-bottom: 0px;
+}
+
 @media screen and (max-width: 991px) {
   .info-block-top {
     display: none;
@@ -3709,6 +3780,13 @@ label {
 
   .nav-link.wish {
     display: none;
+  }
+
+  .nav-link.mob {
+    margin-right: 0px;
+    background-image: none;
+    background-size: auto;
+    background-repeat: repeat;
   }
 
   .nav-menu {
@@ -3923,6 +4001,13 @@ label {
     border-style: none;
   }
 
+  .soc-model {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .product-hover-mask {
     display: none;
   }
@@ -4125,6 +4210,10 @@ label {
     padding-left: 20px;
   }
 
+  .heading-wrapper {
+    text-align: center;
+  }
+
   .grid-items {
     grid-row-gap: 80px;
     -ms-grid-columns: 1fr;
@@ -4213,7 +4302,7 @@ label {
   }
 
   .slider-nav {
-    display: none;
+    bottom: -5%;
   }
 
   .brand-menu {
@@ -4509,10 +4598,6 @@ label {
     padding-left: 20px;
   }
 
-  .heading-wrapper {
-    text-align: center;
-  }
-
   .s4 {
     padding-right: 20px;
     padding-left: 20px;
@@ -4624,6 +4709,10 @@ label {
   .btn-green.total {
     display: block;
     text-align: center;
+  }
+
+  .list-images {
+    margin-top: 12px;
   }
 
   .card-form {

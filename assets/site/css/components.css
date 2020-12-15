@@ -55,6 +55,7 @@ textarea {
 
 .color-radio {
   position: relative;
+  border: 1px solid #ddd;
 }
 
 .color-radio [type="radio"]:checked + .color-radio,.color-radio [type="radio"]:not(:checked) + .color-radio {
@@ -67,7 +68,6 @@ textarea {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-style: none;
   border-radius: 0%;
   background-color: transparent;
   background-image: url('../images/check-galka.svg');
@@ -334,7 +334,6 @@ label {
 }
 .w-input[disabled],
 .w-select[disabled],
-.w-input[readonly],
 .w-select[readonly],
 fieldset[disabled] .w-input,
 fieldset[disabled] .w-select {
