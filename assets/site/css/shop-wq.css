@@ -3160,13 +3160,13 @@ label {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #fff;
   color: #c4c4c4;
   font-size: 10px;
   line-height: 13px;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  background: #fff;
 }
 
 .btns-wrapper {
@@ -3204,6 +3204,8 @@ label {
   width: 36px;
   height: 36px;
   margin-top: 0px;
+  border-style: solid;
+  border-color: #ddd;
   border-radius: 0%;
 }
 
@@ -3741,6 +3743,7 @@ label {
     -ms-flex-align: start;
     align-items: flex-start;
     background-image: url('../images/chevron-nav.svg');
+    background-position: 100% 50%;
     background-size: auto;
     background-repeat: no-repeat;
   }
