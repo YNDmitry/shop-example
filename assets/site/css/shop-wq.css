@@ -4132,11 +4132,6 @@ label {
     margin-left: 0px;
   }
 
-  .grid-products {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .dd-link_2 {
     padding-left: 0px;
   }
