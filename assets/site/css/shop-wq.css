@@ -748,10 +748,10 @@ label {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .card {
@@ -773,9 +773,10 @@ label {
 }
 
 .price-card {
-  margin-bottom: auto;
   color: #909090;
   font-size: 15px;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .icon-card {
@@ -4323,8 +4324,8 @@ label {
 
   .grid-items {
     grid-row-gap: 80px;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .grid-items._4-items {
@@ -4708,6 +4709,11 @@ label {
   .s2 {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .grid-items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .s4 {
