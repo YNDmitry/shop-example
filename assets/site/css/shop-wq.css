@@ -4428,10 +4428,6 @@ label {
     width: auto;
   }
 
-  .right-side-content {
-    width: auto;
-  }
-
   .result-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4449,6 +4445,9 @@ label {
   }
 
   .grid-products {
+    width: 66%;
+    margin-right: auto;
+    margin-left: auto;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
@@ -4776,6 +4775,12 @@ label {
   .container-width {
     margin-right: 10px;
     margin-left: 10px;
+  }
+
+  .grid-products {
+    width: auto;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .close.modal {
