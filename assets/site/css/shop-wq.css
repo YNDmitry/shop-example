@@ -1557,7 +1557,7 @@ label {
 
 .sub-menu {
   margin-bottom: 0px;
-  padding: 30px 25px 30px 29px;
+  padding: 20px 25px 30px 29px;
   border-style: solid;
   border-width: 3px 1px 1px;
   border-color: #08422c #efefef #efefef;
@@ -1586,7 +1586,7 @@ label {
 
 .dd-link-margin {
   position: relative;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .dd-link-margin.chevron {
