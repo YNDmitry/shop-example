@@ -1557,7 +1557,7 @@ label {
 
 .sub-menu {
   margin-bottom: 0px;
-  padding: 20px 25px 30px 29px;
+  padding: 15px 25px 25px 30px;
   border-style: solid;
   border-width: 3px 1px 1px;
   border-color: #08422c #efefef #efefef;
@@ -1621,7 +1621,7 @@ label {
 
 .dd-list-double-wrapper {
   margin-left: 50px;
-  padding: 20px;
+  padding: 15px 30px 25px;
   border-style: solid;
   border-width: 3px 1px 1px;
   border-color: #08422c #efefef #efefef;
@@ -1857,6 +1857,13 @@ label {
   line-height: 1.818em;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+}
+
+.dd-link_2 {
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
 }
 
 .ui-widget-content {
@@ -4138,10 +4145,6 @@ label {
   .right-side-content {
     width: 100%;
     margin-left: 0px;
-  }
-
-  .dd-link_2 {
-    padding-left: 0px;
   }
 
   .modal-wrapper.remodal {
