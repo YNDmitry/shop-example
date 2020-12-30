@@ -30,7 +30,7 @@ textarea {
   appearance: none;
 }
 
-.check-radio-custom [type="radio"]:checked,.check-radio-custom [type="radio"]:not(:checked) {
+.check-radio-custom [type="radio"]:checked,.check-radio-custom [type="radio"]:not(:checked), input[type="checkbox"] {
   position: absolute;
   left: -9999px;
 }
