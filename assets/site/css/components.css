@@ -131,6 +131,7 @@ textarea {
 .w-inline-block {
   max-width: 100%;
   display: inline-block;
+  background-color: transparent;
 }
 .w-clearfix:before,
 .w-clearfix:after {
