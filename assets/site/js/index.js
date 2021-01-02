@@ -191,14 +191,14 @@ Webflow.require('ix2').init({
       target: {
         selector: '.more-btn',
         originalId:
-          '5fcbd3b5f2045926c30bfb74|1ef92890-51b6-6978-3944-b4218189fae1',
+          '5fed8fa15ceaed7708dae538|5cd51fd5-21b8-a3dd-a480-ef8ed00d073c',
         appliesTo: 'CLASS',
       },
       targets: [
         {
           selector: '.more-btn',
           originalId:
-            '5fcbd3b5f2045926c30bfb74|1ef92890-51b6-6978-3944-b4218189fae1',
+            '5fed8fa15ceaed7708dae538|5cd51fd5-21b8-a3dd-a480-ef8ed00d073c',
           appliesTo: 'CLASS',
         },
       ],
@@ -560,6 +560,94 @@ Webflow.require('ix2').init({
         effectIn: null,
       },
       createdOn: 1607523950534,
+    },
+    'e-17': {
+      id: 'e-17',
+      name: 'Unnamed interaction',
+      animationType: 'custom',
+      eventTypeId: 'MOUSE_OVER',
+      action: {
+        id: '',
+        actionTypeId: 'GENERAL_START_ACTION',
+        config: {
+          delay: 0,
+          easing: '',
+          duration: 0,
+          actionListId: 'a-16',
+          affectedElements: {},
+          playInReverse: false,
+          autoStopEventId: 'e-18',
+        },
+      },
+      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      target: {
+        selector: '.diseginer-card',
+        originalId:
+          '5fedce80aac90826ad6296bb|ac492073-96b2-fa8f-9af4-c875f0ae94b4',
+        appliesTo: 'CLASS',
+      },
+      targets: [
+        {
+          selector: '.diseginer-card',
+          originalId:
+            '5fedce80aac90826ad6296bb|ac492073-96b2-fa8f-9af4-c875f0ae94b4',
+          appliesTo: 'CLASS',
+        },
+      ],
+      config: {
+        loop: false,
+        playInReverse: false,
+        scrollOffsetValue: null,
+        scrollOffsetUnit: null,
+        delay: null,
+        direction: null,
+        effectIn: null,
+      },
+      createdOn: 1609421100467,
+    },
+    'e-18': {
+      id: 'e-18',
+      name: 'Unnamed interaction',
+      animationType: 'custom',
+      eventTypeId: 'MOUSE_OUT',
+      action: {
+        id: '',
+        actionTypeId: 'GENERAL_START_ACTION',
+        config: {
+          delay: 0,
+          easing: '',
+          duration: 0,
+          actionListId: 'a-17',
+          affectedElements: {},
+          playInReverse: false,
+          autoStopEventId: 'e-17',
+        },
+      },
+      mediaQueries: ['main', 'medium', 'small', 'tiny'],
+      target: {
+        selector: '.diseginer-card',
+        originalId:
+          '5fedce80aac90826ad6296bb|ac492073-96b2-fa8f-9af4-c875f0ae94b4',
+        appliesTo: 'CLASS',
+      },
+      targets: [
+        {
+          selector: '.diseginer-card',
+          originalId:
+            '5fedce80aac90826ad6296bb|ac492073-96b2-fa8f-9af4-c875f0ae94b4',
+          appliesTo: 'CLASS',
+        },
+      ],
+      config: {
+        loop: false,
+        playInReverse: false,
+        scrollOffsetValue: null,
+        scrollOffsetUnit: null,
+        delay: null,
+        direction: null,
+        effectIn: null,
+      },
+      createdOn: 1609421100469,
     },
   },
   actionLists: {
@@ -2037,6 +2125,139 @@ Webflow.require('ix2').init({
       ],
       useFirstGroupAsInitialState: false,
       createdOn: 1607523960221,
+    },
+    'a-16': {
+      id: 'a-16',
+      title: 'design-hover',
+      actionItemGroups: [
+        {
+          actionItems: [
+            {
+              id: 'a-16-n',
+              actionTypeId: 'STYLE_OPACITY',
+              config: {
+                delay: 0,
+                easing: 'ease',
+                duration: 300,
+                target: {
+                  useEventTarget: 'CHILDREN',
+                  selector: '.design-border',
+                  selectorGuids: ['82f4e142-39ad-7144-7fa4-2e461f2b3d35'],
+                },
+                value: 0,
+                unit: '',
+              },
+            },
+            {
+              id: 'a-16-n-3',
+              actionTypeId: 'STYLE_TEXT_COLOR',
+              config: {
+                delay: 0,
+                easing: 'ease',
+                duration: 300,
+                target: {
+                  useEventTarget: 'CHILDREN',
+                  selector: '.desgin-name',
+                  selectorGuids: ['8f2cf1ce-ffd7-8800-5b07-493d616ce787'],
+                },
+                globalSwatchId: '',
+                rValue: 51,
+                bValue: 51,
+                gValue: 51,
+                aValue: 1,
+              },
+            },
+          ],
+        },
+        {
+          actionItems: [
+            {
+              id: 'a-16-n-2',
+              actionTypeId: 'STYLE_OPACITY',
+              config: {
+                delay: 0,
+                easing: 'ease',
+                duration: 300,
+                target: {
+                  useEventTarget: 'CHILDREN',
+                  selector: '.design-border',
+                  selectorGuids: ['82f4e142-39ad-7144-7fa4-2e461f2b3d35'],
+                },
+                value: 1,
+                unit: '',
+              },
+            },
+            {
+              id: 'a-16-n-4',
+              actionTypeId: 'STYLE_TEXT_COLOR',
+              config: {
+                delay: 0,
+                easing: 'ease',
+                duration: 300,
+                target: {
+                  useEventTarget: 'CHILDREN',
+                  selector: '.desgin-name',
+                  selectorGuids: ['8f2cf1ce-ffd7-8800-5b07-493d616ce787'],
+                },
+                globalSwatchId: '5894abd0',
+                rValue: 8,
+                bValue: 44,
+                gValue: 66,
+                aValue: 1,
+              },
+            },
+          ],
+        },
+      ],
+      useFirstGroupAsInitialState: true,
+      createdOn: 1609421105077,
+    },
+    'a-17': {
+      id: 'a-17',
+      title: 'design-hover-out',
+      actionItemGroups: [
+        {
+          actionItems: [
+            {
+              id: 'a-17-n',
+              actionTypeId: 'STYLE_OPACITY',
+              config: {
+                delay: 0,
+                easing: 'ease',
+                duration: 300,
+                target: {
+                  useEventTarget: 'CHILDREN',
+                  selector: '.design-border',
+                  selectorGuids: ['82f4e142-39ad-7144-7fa4-2e461f2b3d35'],
+                },
+                value: 0,
+                unit: '',
+              },
+            },
+            {
+              id: 'a-17-n-2',
+              actionTypeId: 'STYLE_TEXT_COLOR',
+              config: {
+                delay: 0,
+                easing: 'ease',
+                duration: 300,
+                target: {
+                  useEventTarget: 'CHILDREN',
+                  selector: '.desgin-name',
+                  selectorGuids: ['8f2cf1ce-ffd7-8800-5b07-493d616ce787'],
+                },
+                globalSwatchId: '',
+                rValue: 51,
+                bValue: 51,
+                gValue: 51,
+                aValue: 1,
+              },
+            },
+          ],
+        },
+      ],
+      useFirstGroupAsInitialState: false,
+      createdOn: 1609421105077,
     },
   },
   site: {
