@@ -19,9 +19,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <style>
-.icon-location-pin:before {content: "\e096";}.icon-envelope:before {content: "\e086";}#search-btn.lnr-chevron-right:before {content: "\e090";}.icon-phone:before {content: "\e600";}.icon-user:before {content: "\e005";}.icon-handbag:before {content: "\e035";}.icon-heart:before {content: "\e08a";}.tparrow.tp-leftarrow:before {content: '\e824';}.tparrow.tp-rightarrow:before {content: '\e825';}.lnr-menu:before {content: "\e871";}.icon-repl:before {content: "\e05a";}.icon-glaz:before {content: "\e087";}
-</style>
 </head>
 <body>
   <header id="header">
@@ -374,7 +371,16 @@
             <input type="text" maxlength="256" placeholder="Искать" class="input margin-off w-input">
             <button type="submit" value="" class="sumbit-btn w-button"></button>
           </form>
-          <div class="not-found">Ничего не найдено</div>
+          <div class="search-block-wrapper">
+            <div class="img-search"><img src="assets/site/images/shop-single-img-5.jpg" loading="lazy" width="400" srcset="assets/site/images/shop-single-img-5-p-500.jpeg 500w, assets/site/images/shop-single-img-5.jpg 800w" sizes="(max-width: 767px) 24vw, 150px" alt=""></div>
+            <div>
+              <div class="hading-margin">
+                <h4>Blue coat</h4>
+              </div>
+              <div>Lorem ipsum dolor sit amet, consectetur a elit. In ut ullamcorper leo, euismod eget orci. Cum sociis natoque penatibus et magnis dis parturient convallis. uismod orci. Cum sociis n</div>
+            </div>
+          </div>
+          <div class="not-found hidden">Ничего не найдено</div>
           <div class="w-form-done">
             <div>Thank you! Your submission has been received!</div>
           </div>

@@ -687,6 +687,10 @@ label {
   margin-left: 0px;
 }
 
+.border-btn.green.comment-margin {
+  margin-top: 15px;
+}
+
 .border-btn.black {
   margin-top: 10px;
   border-color: #000;
@@ -825,6 +829,7 @@ label {
   overflow: hidden;
   margin-top: 23px;
   padding-bottom: 0px;
+  background-color: transparent;
   font-family: 'Pt root ui', sans-serif;
   color: #333;
   font-size: 11px;
@@ -833,7 +838,6 @@ label {
   letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: transparent;
 }
 
 .more-btn.margin-off {
@@ -2067,7 +2071,6 @@ label {
 
 .pagination-wrapper.margin-set {
   margin-top: 56px;
-  margin-bottom: 75px;
 }
 
 .page-number {
@@ -2554,6 +2557,11 @@ label {
   height: 48px;
   margin-top: 4px;
   margin-right: 0px;
+}
+
+.input.comment-margin {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .info-wrapper {
@@ -3335,6 +3343,10 @@ label {
   margin-top: 89px;
   padding-top: 34px;
   text-align: center;
+}
+
+.product-card-wrapper.margin-set {
+  margin-top: 0px;
 }
 
 .size-modal {
@@ -4123,10 +4135,17 @@ label {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 50%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.design-pag-link:hover {
+  background-color: #08422c;
+  color: #fff;
 }
 
 .design-pag-link.w--current {
-  border-radius: 50%;
   background-color: #08422c;
   color: #fff;
 }
@@ -4136,12 +4155,9 @@ label {
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: no-repeat;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
 }
 
 .design-pag-link.next:hover {
-  border-radius: 50%;
   background-color: #f3f3f3;
 }
 
@@ -4331,6 +4347,7 @@ label {
   display: -ms-grid;
   display: grid;
   padding-top: 120px;
+  padding-bottom: 75px;
   grid-auto-columns: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 16px;
@@ -4501,6 +4518,111 @@ label {
   font-size: 26px;
   line-height: 1.346em;
   font-weight: 500;
+}
+
+.acc-check-wrap {
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.img-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  max-width: 150px;
+  margin-right: 30px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.search-block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-size: 15px;
+}
+
+.hading-margin {
+  margin-bottom: 15px;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.comment.pre-com {
+  margin-left: 30px;
+}
+
+.comment-ava {
+  overflow: hidden;
+  width: 100%;
+  max-width: 82px;
+  margin-right: 25px;
+  border-radius: 50%;
+}
+
+.comment-name {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 22px;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.name-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.comment-p {
+  margin-right: 100px;
+}
+
+.comments-wrapper {
+  margin-top: 56px;
+}
+
+.comment-form {
+  margin-top: 26px;
+}
+
+.comment-form-wrapper {
+  margin-top: 50px;
+}
+
+.comment-block {
+  margin-top: 75px;
 }
 
 @media screen and (max-width: 991px) {
@@ -4986,6 +5108,10 @@ label {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .grid-acii {
+    padding-top: 60px;
+  }
+
   .grid-acii.police {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
@@ -5363,6 +5489,13 @@ label {
     margin-right: 0px;
   }
 
+  .design-right-side {
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
   .design-ava-wrapper {
     display: inline-block;
   }
@@ -5677,6 +5810,37 @@ label {
   .author-ava {
     margin-right: 0px;
     margin-bottom: 15px;
+  }
+
+  .acc-check-wrap {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .comment-ava {
+    margin-bottom: 25px;
+  }
+
+  .comment-name {
+    margin-bottom: 20px;
+  }
+
+  .name-wrap {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .comment-p {
+    margin-right: 0px;
   }
 }
 
