@@ -4205,12 +4205,12 @@ label {
 }
 
 .design-left-side {
-  width: 100%;
-  max-width: 734px;
-  margin-right: 123px;
+  width: 70%;
 }
 
 .design-right-side {
+  width: 30%;
+  margin-left: 11%;
   font-family: 'Cormorant Garamond', sans-serif;
 }
 
@@ -4338,6 +4338,10 @@ label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .progress {
@@ -5128,6 +5132,18 @@ label {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .design-ava-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .grid-acii {
     padding-top: 60px;
   }
@@ -5192,7 +5208,7 @@ label {
   }
 
   .grid-items._4-items {
-    width: 78%;
+    width: 58%;
     margin-right: auto;
     margin-left: auto;
     -ms-grid-columns: 1fr;
@@ -5513,10 +5529,12 @@ label {
   }
 
   .design-left-side {
+    width: 100%;
     margin-right: 0px;
   }
 
   .design-right-side {
+    margin-left: 0px;
     -webkit-box-ordinal-group: 0;
     -webkit-order: -1;
     -ms-flex-order: -1;
@@ -5635,6 +5653,10 @@ label {
   .grid-items {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .grid-items._4-items {
+    width: 93%;
   }
 
   .s4 {
