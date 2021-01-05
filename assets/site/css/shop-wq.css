@@ -2767,6 +2767,10 @@ label {
   padding-left: 15px;
 }
 
+.product-price.wish.mobil {
+  display: none;
+}
+
 .product-quantity {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5009,6 +5013,17 @@ label {
     border-bottom: 1px solid #ddd;
   }
 
+  .product-price.wish.mobil {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: grey;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
   .cart-item {
     margin-bottom: 24px;
     -webkit-box-orient: horizontal;
@@ -5558,6 +5573,12 @@ label {
     grid-template-columns: 100%;
   }
 
+  .grid-acii.police {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .left-side {
     padding-right: 0px;
   }
@@ -5890,6 +5911,15 @@ label {
 
   .comment-p {
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #w-node-86ecc276c51b-bdd94df4 {
+    -webkit-box-ordinal-group: 10000;
+    -webkit-order: 9999;
+    -ms-flex-order: 9999;
+    order: 9999;
   }
 }
 
