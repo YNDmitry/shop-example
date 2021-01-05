@@ -4783,6 +4783,9 @@ label {
   }
 
   .grid-items._4-items {
+    width: 89%;
+    margin-right: auto;
+    margin-left: auto;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
