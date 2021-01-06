@@ -2524,12 +2524,12 @@ label {
 }
 
 .input {
-  width: 100%;
   height: 50px;
   margin-right: 20px;
   margin-bottom: 0px;
   padding: 12px 20px;
   border: 1px solid #ddd;
+  border-radius: 0%;
   background-color: #fafafa;
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
@@ -3894,13 +3894,20 @@ label {
 
 .blog-img-wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
-  height: 650px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .blog-img {
   width: 100%;
-  height: 100%;
+  max-width: none;
   -webkit-transform: translate(0px, -80px) scale(1.075);
   -ms-transform: translate(0px, -80px) scale(1.075);
   transform: translate(0px, -80px) scale(1.075);
@@ -4331,11 +4338,11 @@ label {
 
 .design-ava {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 31px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .des-side-wrapper {
@@ -4446,8 +4453,8 @@ label {
 }
 
 .soc-profile.left {
-  margin-top: 40px;
-  margin-bottom: 85px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .soc-profile.flex-set {
@@ -4657,8 +4664,11 @@ label {
   }
 
   .navbar {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .nav-link {
@@ -4741,6 +4751,7 @@ label {
   }
 
   .nav-container {
+    width: 95%;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -4769,9 +4780,23 @@ label {
   }
 
   .brand.nav.telephone {
-    width: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33.333333333333336%;
     height: auto;
     margin-right: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 31px;
+    text-align: center;
   }
 
   .header {
@@ -4986,6 +5011,13 @@ label {
     display: none;
   }
 
+  .title-block.cart {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .product-remove.wish {
     position: absolute;
     left: auto;
@@ -5109,6 +5141,8 @@ label {
   }
 
   .cont-col {
+    padding-top: 60px;
+    padding-bottom: 60px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -5188,11 +5222,6 @@ label {
     padding-left: 20px;
   }
 
-  .navbar {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
   .nav-link.soc {
     margin-right: 10px;
     margin-left: 10px;
@@ -5201,6 +5230,10 @@ label {
   .nav-menu {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .nav-container {
+    width: 90%;
   }
 
   .container {
@@ -5310,11 +5343,20 @@ label {
     height: auto;
   }
 
+  .br-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .container-width {
-    width: auto;
-    max-width: none;
-    margin-right: 90px;
-    margin-left: 70px;
+    width: 85%;
   }
 
   .left-side-setting {
@@ -5338,11 +5380,8 @@ label {
   }
 
   .grid-products {
-    width: 66%;
-    margin-right: auto;
-    margin-left: auto;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .pagination-wrapper {
@@ -5357,6 +5396,10 @@ label {
   .page-number.next.width-set {
     width: auto;
     padding-right: 10px;
+  }
+
+  .cart-form {
+    width: 90%;
   }
 
   .title-block {
@@ -5739,14 +5782,19 @@ label {
   }
 
   .container-width {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .grid-products {
-    width: auto;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .pagination-wrapper.margin-set {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .close.modal {
@@ -5761,6 +5809,10 @@ label {
   .input.tel-margin {
     margin-right: 0px;
     margin-bottom: 25px;
+  }
+
+  .cart-form {
+    width: 90%;
   }
 
   .title-block.wish {
