@@ -1010,7 +1010,8 @@ label {
 }
 
 .sumbit-btn {
-  width: 50px;
+  max-width: 50px;
+  width: 100%;
   padding-top: 0px;
   padding-bottom: 0px;
   border-style: solid;
