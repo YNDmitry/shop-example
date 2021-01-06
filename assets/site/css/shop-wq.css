@@ -5209,6 +5209,11 @@ label {
     margin-left: 10px;
   }
 
+  .sep-card {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .nav-menu {
     padding-right: 20px;
     padding-left: 20px;
