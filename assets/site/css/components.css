@@ -28,6 +28,7 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border-radius: 0px;
 }
 
 .check-radio-custom [type="radio"]:checked,.check-radio-custom [type="radio"]:not(:checked), input[type="checkbox"] {
