@@ -1872,15 +1872,6 @@ label {
   letter-spacing: 0em;
 }
 
-#slider-ui .noUi-handle {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #08422c;
-  cursor: pointer;
-}
-
 .price-slider-amount {
   display: -webkit-box;
   display: -webkit-flex;
