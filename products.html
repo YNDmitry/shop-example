@@ -409,7 +409,7 @@
               <form name="email-form-2" class="form-amount">
                 <div>Цена:</div>
                 <div class="amounts-wrapper">
-                  <div class="inp-amount w-input" id="amount">1</div>
+                  <div class="inp-amount" id="amount">1</div>
                 </div>
               </form>
             </div>
@@ -944,7 +944,7 @@
     });
 
     slider.noUiSlider.on('update', function (values, handle, positions) {
-      amount.innerHTML = values.join(' — ');
+      amount.innerHTML = '₽' + values[0] + ' — ' + '₽' + values[1];
     });
   </script>
 </body>
