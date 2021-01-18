@@ -557,11 +557,12 @@ label {
   -ms-flex-align: center;
   align-items: center;
   background-color: #000;
-  background-image: url('../images/h1-slider-img-2.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/h1-slider-img-2.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/h1-slider-img-2.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, fixed;
   color: #fff;
   text-align: center;
 }
@@ -1486,7 +1487,7 @@ label {
 .dd-list-border {
   position: absolute;
   z-index: 10;
-  display: none;
+  display: block;
   overflow: hidden;
   background-color: #fff;
 }
@@ -1641,6 +1642,14 @@ label {
   margin-right: 0px;
   margin-left: 0px;
   padding: 0px;
+}
+
+.dd-toggle-double.chev {
+  margin-right: 20px;
+  background-image: url('../images/chevron-nav.svg');
+  background-position: 100% 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .dd-list-double-wrapper {
