@@ -1754,13 +1754,13 @@ label {
   align-items: flex-end;
   border: 1px solid #08422c;
   background-color: hsla(0, 0%, 100%, 0.95);
-  opacity: 0;
+  opacity: 0%;
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
 }
 
 .product-hover-mask:hover {
-  opacity: 1;
+  opacity: 70%;
 }
 
 .burger {
